@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--full-content-->
+            <div class="full-content">
+                <!--side-con-wrap-->
+                <div class="side-con-wrap">
+                    <!--my-link-text-->
+                    <div class="my-link-text">
+                        <div class="my-group">
+                            <span class="my-name">사용자</span>님, 환영합니다.<br>
+                            <a href="mypage_sub1.html" class="my-link page-on">회원정보</a>를 업데이트 해주세요.
+                        </div>
+                        <div class="my-group">
+                            최근 1개월간 0건 주문하셨고,<br>
+                            자세한 내용은 <a href="mypage_sub2.html" class="my-link">주문내역</a>에서 확인하실 수 있습니다.
+                        </div>
+                        <div class="my-group">
+                            최근 문의 주셨던 1건의 <a href="mypage_sub3.html" class="my-link">문의</a>는<br>
+                            현재 접수되었습니다.
+                        </div>
+                        <div class="my-group">
+                            정보보호를 위해 3개월에 한번<br>
+                            <a href="#" class="my-link">비밀번호 변경</a>을 해주세요.
+                        </div>
+                    </div>
+                    <!--// my-link-text-->
+                </div>
+                <!--// side-con-wrap-->
+                <!--con-wrap-->
+                <div class="con-wrap">
+                    <!--mo-page-tab-->
+                    <ul class="mo-page-tab">
+                        <li class="page-on"><a href="mypage_sub1.html">회원정보</a></li>
+                        <li><a href="mypage_sub2.html">주문내역</a></li>
+                        <li><a href="mypage_sub3.html">문의</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                    </ul>
+                    <!--mo-page-tab-->
+                    <!--sub-tit-wrap-->
+                    <div class="sub-tit-wrap">
+                        <p class="sub-tit">회원탈퇴</p>
+                    </div>
+                    <!--// sub-tit-wrap-->
+
+                    <div class="con-mb-base">
+                        <!--section-wrap-->
+                        <div class="section-wrap full-fill split-large">
+                            <div class="split">
+                                <!--border-box-->
+                                <div class="border-box">
+                                    <!--util-defi-->
+                                    <div class="util-defi">
+                                        <dl class="direct-row">
+                                            <dt>
+                                                회원탈퇴 시 개인정보 및 아이코비-스튜디오에서 만들어진 모든 데이터는 삭제 됩니다.<br>
+                                                (단, 아래 항목은 표기된 법률에 따라 특정 기간 동안 보관됩니다.)
+                                            </dt>
+                                        </dl>
+                                        <dl class="direct-row sub-defi">
+                                            <dt>1.</dt>
+                                            <dd>계약 또는 청약철회 등에 관한 기록 보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률 / 보존 기간 : 5년</dd>
+                                        </dl>
+                                        <dl class="direct-row sub-defi">
+                                            <dt>2.</dt>
+                                            <dd>대금결제 및 재화 등의 공급에 관한 기록 보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률 / 보존 기간 : 5년</dd>
+                                        </dl>
+                                        <dl class="direct-row sub-defi">
+                                            <dt>3.</dt>
+                                            <dd>전자금융 거래에 관한 기록 보존 이유 : 전자금융거래법 기간 / 5년</dd>
+                                        </dl>
+                                        <dl class="direct-row sub-defi">
+                                            <dt>4.</dt>
+                                            <dd>소비자의 불만 또는 분쟁거리에 관한 기록 보존 이유 : 전자상거래 등에서의  소비자보호에 관한 법률 보존 기간 / 3년</dd>
+                                        </dl>
+                                        <dl class="direct-row sub-defi">
+                                            <dt>5.</dt>
+                                            <dd>신용정보의 수집/처리 및 이용 등에 관한 기록 보존 이유 : 신용정보의 이용 및 보호에 관한 법률 보존기간 / 3년</dd>
+                                        </dl>
+                                        <dl class="direct-row sub-defi">
+                                            <dt>6.</dt>
+                                            <dd>전자(세금)계산서 시스템 구축 운영하는 사업자가 지켜야할 사항 고시(국세청 고시 제 2016-3호)(전자세금계산서 사용자에 한함) : 5년 (단,(세금)계산서 내 개인 식별번호는 3년 경과 후 파기)</dd>
+                                        </dl>
+                                    </div>
+                                    <!--// util-defi-->
+                                </div>
+                                <!--// border-box-->
+                            </div>
+                        </div>
+                        <!--// section-wrap-->
+                    </div>
+                    <div class="con-mb-base">
+                        <div class="section-tit">유의사항</div>
+                        <!--section-wrap-->
+                        <div class="section-wrap full-fill split-large">
+                            <div class="split">
+                                <!--info-box-->
+                                <div class="info-box">
+                                    <!--bul-round-->
+                                    <ul class="bul-round">
+                                        <li>회원 탈퇴 신청 전 ‘주문내역’을 확인하시고 진행 중인 주문 취소 후 탈퇴 진행이 가능합니다.</li>
+                                        <li>회원탈퇴 처리 후에는 회원님의 개인정보를 복원할 수 없으며, 회원탈퇴 진행 시 해당 아이디는 영구적으로 삭제되어 재가입이 불가능합니다.</li>
+                                        <li>소속된 회사가 존재할 경우, ‘탈퇴‘ 회원으로 조회됩니다.</li>
+                                    </ul>
+                                    <!--// bul-round-->
+                                </div>
+                                <!--// info-box-->
+                            </div>
+                        </div>
+                        <!--// section-wrap-->
+                        <!--section-wrap-->
+                        <div class="section-wrap full-fill">
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample1" class="form-label">탈퇴사유</label>
+                                    <!--ui-select-->
+                                    <div class="ui-select">
+                                        <div class="select">
+                                            <span>선택</span>
+                                            <i class="mdi mdi-chevron-down"></i>
+                                        </div>
+                                        <input type="hidden" name="selection">
+                                        <ul class="ui-select-menu">
+                                            <li id="selctID1">원하는 정보나 서비스가 없습니다.</li>
+                                            <li id="selctID2">원하는 요금제가 없습니다.</li>
+                                            <li id="selctID3">문의에 대한 답변이 늦습니다.</li>
+                                            <li id="selctID4">고객지원 대응이 늦습니다.</li>
+                                            <li id="selctID5">불필요한 메일이 자주 옵니다.</li>
+                                            <li id="selctID6">기타</li>
+                                        </ul>
+                                    </div>
+                                    <!--// ui-select-->
+                                    <input type="text" class="inp-base w100" placeholder="기타 의견을 적어주세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <!--// section-wrap-->
+                        <!--section-wrap-->
+                        <div class="section-wrap full-fill">
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample2" class="form-label">비밀번호</label>
+                                    <input id="inp-sample2" class="inp-base w100" type="password" placeholder="비밀번호를 입력해 주세요."> 
+                                </div>
+                            </div>
+                        </div>
+                        <!--// section-wrap-->
+                    </div>
+                    <div class="con-mb-base">
+                        <!--section-wrap-->
+                        <div class="section-wrap full-fill">
+                            <div class="split txt-c">
+                                <!--form-check-->
+                                <div class="form-check">
+                                    <input type="checkbox" class="inp-check" name="" id="check-sample" checked>
+                                    <label for="check-sample"><span>해당 내용을 모두 확인했으며, 회원탈퇴에 동의합니다.</span></label>
+                                </div>
+                                <!--// form-check-->
+                            </div>
+                        </div>
+                        <!--// section-wrap-->
+                    </div>
+                    <!--btn-group-->
+                    <div class="btn-group txt-c">
+                        <button class="ui-btn btn-primary2 btn-xlarge w-180px mo100"><span>회원탈퇴</span></button>
+                    </div>
+                    <!--// btn-group-->
+                </div>
+                <!--// con-wrap-->
+            </div>
+            <!--// full-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <!-- layer popup : 이메일인증 -->
+	<div class="dim-layer" id="emailPop">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:450px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+                        <div class="tit">
+							<span class="pop-tit">이메일 인증</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--pop-con-tit-wrap-->
+                        <div class="pop-con-tit-wrap">
+                            <div class="shape-info-img">
+                                <p class="shape-info-icon shape-circle state-success"><i class="ri-check-line"></i></p>
+                            </div>
+                            <p class="pop-con-tit-desc"><span class="txt-point fn-medium break-all">admin@mangosteensoft.co.kr</span> 으로 <br class="mo-hide">인증 메일이 전송되었습니다. <br>이메일 인증을 완료해 주세요.</p>
+                        </div>
+                        <!--pop-con-tit-wrap-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <ul class="bul-round">
+                                <li>이메일이 도착하지 않은 경우, <br>스팸편지함 확인 또는 <a href="#" class="ui-btn btn-text-link btn-underline ver-a-n">인증 메일 다시 보내기</a></li>
+                            </ul>
+                        </div>
+                        <!--// info-box-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w100 popup-open"><span>확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 이메일인증 -->
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
+</body>
+</html>

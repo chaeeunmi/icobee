@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--full-content-->
+            <div class="full-content">
+                <!--side-con-wrap-->
+                <div class="side-con-wrap">
+                    <!--my-link-text-->
+                    <div class="my-link-text">
+                        <div class="my-group">
+                            <span class="my-name">사용자</span>님, 환영합니다.<br>
+                            <a href="mypage_sub1.html" class="my-link page-on">회원정보</a>를 업데이트 해주세요.
+                        </div>
+                        <div class="my-group">
+                            최근 1개월간 0건 주문하셨고,<br>
+                            자세한 내용은 <a href="mypage_sub2.html" class="my-link">주문내역</a>에서 확인하실 수 있습니다.
+                        </div>
+                        <div class="my-group">
+                            최근 문의 주셨던 1건의 <a href="mypage_sub3.html" class="my-link">문의</a>는<br>
+                            현재 접수되었습니다.
+                        </div>
+                        <div class="my-group">
+                            정보보호를 위해 3개월에 한번<br>
+                            <a href="#" class="my-link">비밀번호 변경</a>을 해주세요.
+                        </div>
+                    </div>
+                    <!--// my-link-text-->
+                </div>
+                <!--// side-con-wrap-->
+                <!--con-wrap-->
+                <div class="con-wrap">
+                    <!--mo-page-tab-->
+                    <ul class="mo-page-tab">
+                        <li class="page-on"><a href="mypage_sub1.html">회원정보</a></li>
+                        <li><a href="mypage_sub2.html">주문내역</a></li>
+                        <li><a href="mypage_sub3.html">문의</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                    </ul>
+                    <!--mo-page-tab-->
+                    <!--sub-tit-wrap-->
+                    <div class="sub-tit-wrap">
+                        <p class="sub-tit">회원정보 수정</p>
+                    </div>
+                    <!--// sub-tit-wrap-->
+                    <div class="con-mb-large">
+                        <div class="section-tit">기본정보</div>
+                        <div class="section-wrap full-fill split-large con-mb-base">
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">이름</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="이름">
+                                </div>
+                            </div>
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample2" class="form-label">성별</label>
+                                    <!--radio-select-->
+                                    <ul class="radio-select">
+                                        <li class="w-120px">
+                                            <div class="inp-wrap">
+                                                <input type="radio" id="apply-radio1" name="section2" checked>
+                                                <label for="apply-radio1"><span>여자</span></label>
+                                            </div>
+                                        </li>
+                                        <li class="w-120px">
+                                            <div class="inp-wrap">
+                                                <input type="radio" id="apply-radio2" name="section2">
+                                                <label for="apply-radio2"><span>남자</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--// radio-select-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-wrap full-fill split-large con-mb-base">
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample2" class="form-label">이메일</label>
+                                    <div class="has-icon-input">
+                                        <input id="inp-sample2" class="inp-base inp-underline w100" type="text" placeholder="이메일">
+                                        <button class="ui-btn btn-secondary btn-small"><span>인증</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample3" class="form-label">연락처</label>
+                                    <input id="inp-sample3" class="inp-base inp-underline w100" type="text" placeholder="연락처(숫자만 입력)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-wrap full-fill split-large">
+                            <div class="split">
+                                <div class="form-group col">
+                                    <label for="inp-sample4" class="form-label">주소</label>
+                                    <div class="has-icon-input">
+                                        <input id="inp-sample4" class="inp-base inp-underline w100" type="text" placeholder="우편번호">
+                                        <button class="ui-btn btn-secondary btn-small"><span>우편번호</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="split empty-split"></div>
+                        </div>
+                        <div class="section-wrap full-fill split-large">
+                            <div class="split">
+                                <div class="form-group col">
+                                    <input id="inp-sample5" class="inp-base inp-underline w100" type="text" placeholder="주소">
+                                </div>
+                            </div>
+                            <div class="split">
+                                <div class="form-group col">
+                                    <input id="inp-sample6" class="inp-base inp-underline w100" type="text" placeholder="나머지 주소">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con-mb-large">
+                        <div class="section-tit">수신동의</div>
+                        <!--recept-agree-->
+                        <div class="recept-agree">
+                            <div class="group">
+                                <!--form-check-->
+                                <div class="form-check">
+                                    <input type="checkbox" class="inp-check type2" name="" id="check-sample">
+                                    <label for="check-sample"><span>이벤트, 회원혜택 마케팅 정보수신</span></label>
+                                </div>
+                                <!--// form-check-->
+                                <!--inner-checking-->
+                                <div class="inner-checking">
+                                    <!--form-check-->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="inp-check" name="" id="check-sample2">
+                                        <label for="check-sample2"><span>SMS수신</span></label>
+                                    </div>
+                                    <!--// form-check-->
+                                    <!--form-check-->
+                                    <div class="form-check ml-30">
+                                        <input type="checkbox" class="inp-check" name="" id="check-sample3">
+                                        <label for="check-sample3"><span>이메일수신</span></label>
+                                    </div>
+                                    <!--// form-check-->
+                                    <p class="bul-star noti-text mt-10">구매정보 및 서비스 주요 정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
+                                </div>
+                                <!--// inner-checking-->
+                            </div>
+                            <div class="group">
+                                <!--form-check-->
+                                <div class="form-check">
+                                    <input type="checkbox" class="inp-check type2" name="" id="check-sample4">
+                                    <label for="check-sample4"><span>뉴스레터 구독</span></label>
+                                </div>
+                                <!--// form-check-->
+                            </div>
+                        </div>
+                        <!--// recept-agree-->
+                    </div>
+                    <p class="txt-c txt-grey con-mb-large">
+                        더 이상 서비스 이용을 원지 않으시면 <br class="mo-show"><a href="mypage_sub5.html" class="ui-btn btn-text-link2 btn-underline ver-a-n">회원탈퇴</a> 신청해 주세요.
+                    </p>
+                    <!--btn-group-->
+                    <div class="btn-group txt-c">
+                        <button class="ui-btn btn-primary btn-xlarge w-180px mo100"><span>정보수정</span></button>
+                    </div>
+                    <!--// btn-group-->
+                </div>
+                <!--// con-wrap-->
+            </div>
+            <!--// full-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
+</body>
+</html>

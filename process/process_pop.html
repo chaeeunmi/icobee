@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-process.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+    
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--html-guide-->
+        <div class="html-guide">
+            <div class="html-guide-desc">
+                <h1>프로세스 팝업 목록</h1>
+                <p>버튼 모양은 화면 디자인에 있는 클래스로 사용해주세요.</p>
+                <div class="guide-desc">
+                    <p class="fn-w600">팝업 버튼 공통</p>
+                    <p>data-target="#popupID", class="popup-open"</p><br>
+                    <p class="fn-w600">버튼 클릭없이 팝업호출</p>
+                    <p>layerPopup('#popupID'); //팝업열기</p>
+                    <p>layerPopupClose('#popupID'); //팝업닫기</p>
+                </div>
+            </div>
+            <button data-target="#popup1" class="ui-btn btn-primary popup-open"><span>템플릿 선택</span></button>
+            <button type="button" data-target="#popup2" class="ui-btn btn-primary popup-open"><span>주문하기</span></button>
+            <button data-target="#popup3" class="ui-btn btn-primary popup-open"><span>주문하기_입력</span></button>
+            <button data-target="#popup4" class="ui-btn btn-primary popup-open"><span>모바일 주문서</span></button>
+        </div>
+        <!--// html-guide-->
+    </div>
+    <!--// base-wrap-->
+    
+
+    <!-- layer popup : 템플릿 선택 -->
+	<div class="dim-layer" id="popup1">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="width:800px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">템플릿 선택</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--radio-tab-wrap-->
+                        <div class="radio-tab-wrap">
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="tab-1"># 공공기관</li>
+                                <li class="tab-link" data-tab="tab-2"># 기업</li>
+                                <li class="tab-link" data-tab="tab-3"># 교육</li>
+                                <li class="tab-link" data-tab="tab-4"># 쇼핑</li>
+                            </ul>
+                            <div id="tab-1" class="tab-content current">
+                                <!--radio-select-->
+                                <ul class="radio-select thum-type">
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio35" name="radio-sample8">
+                                            <label for="apply-radio35">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio36" name="radio-sample8">
+                                            <label for="apply-radio36">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio37" name="radio-sample8">
+                                            <label for="apply-radio37">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio38" name="radio-sample8">
+                                            <label for="apply-radio38">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio39" name="radio-sample8">
+                                            <label for="apply-radio39">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio40" name="radio-sample8">
+                                            <label for="apply-radio40">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio41" name="radio-sample8">
+                                            <label for="apply-radio41">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio42" name="radio-sample8">
+                                            <label for="apply-radio42">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio43" name="radio-sample8">
+                                            <label for="apply-radio43">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio44" name="radio-sample8">
+                                            <label for="apply-radio44">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--// radio-select-->
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                222222
+                            </div>
+                            <div id="tab-3" class="tab-content">
+                                333333
+                            </div>
+                            <div id="tab-4" class="tab-content">
+                                444444
+                            </div>
+                        </div>
+                        <!--// radio-tab-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+                <!--pop-footer-->
+				<div class="pop-footer">
+                    <!--con-btn-wrap-->
+                    <div class="con-btn-wrap txt-c">
+                        <button class="ui-btn btn-primary btn-large w-150px mo100"><span>선택</span></button>
+                    </div>
+                    <!--// con-btn-wrap-->
+				</div>
+				<!--// pop-footer-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 템플릿 선택 -->
+
+    <!-- layer popup : 주문서 -->
+	<div class="dim-layer has-bottom-pop" id="popup4">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="width:500px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">주문서</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--insert-txt-wrap-->
+                        <div class="insert-txt-wrap">
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">창업패키지 1</span> 요금제를<br>선택하셨습니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">방문미팅 1회<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">템플릿<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">반응형 홈페이지<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">1년 무상 유지관리</span> 기본사항 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step1">
+                                로고는 <span class="insert-txt insert-on">심볼형<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt insert-on">20,000원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                페이지는 <span class="insert-txt">n페이지<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step2">
+                                첫번째 선택은<br>
+                                <span class="insert-txt">명함<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">1명<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">100장</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                두번째 선택은<br>
+                                <span class="insert-txt">도메인<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">1년</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step3">
+                                브랜드(회사)명은<br>
+                                <span class="insert-txt">직접입력</span>이고<br>
+                                희망도메인은
+                                <span class="insert-txt">직접입력</span>입니다.<br>
+                                <span class="insert-txt">선택</span> 색상의<br>
+                                <span class="insert-txt">선택</span> 디자인을 원해요.
+                            </div>
+                            <!--// txt-group-->
+                        </div>
+                        <!--// insert-txt-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+                <!--pop-footer-->
+				<div class="pop-footer">
+                    <!--con-btn-wrap-->
+                    <div class="con-btn-wrap flex-box">
+                        <button type="button" data-target="#popup2" class="ui-btn btn-primary btn-large flex-grow1 popup-open"><span>주문하기</span></button>
+                    </div>
+                    <!--// con-btn-wrap-->
+				</div>
+				<!--// pop-footer-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문서 -->
+
+    <!-- layer popup : 주문하기_입력 -->
+	<div class="dim-layer" id="popup3">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:520px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">주문하기</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner pt-0">
+						<!---------- 내용 ---------->
+                        <!--pop-inner-wide-->
+                        <div class="pop-inner-wide bg-fill bd-b">
+                            <!--accordion-section-->
+                            <div class="accordion-section border-accordion">
+                                <!--accordion-body-->
+                                <div class="accordion-body"><!--열려있을 때 active 클래스추가-->
+                                    <div class="accordion-label label-click-open">
+                                        <div class="accord-tit">아이코비 브랜드 1+1</div>
+                                        <span class="accord-icon"></span>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <!--bul-round-->
+                                        <ul class="bul-round">
+                                            <li>
+                                                <!--define-list-wrap-->
+                                                <div class="define-list-wrap">
+                                                    <dl>
+                                                        <dt class="pr-5">기본사항 : </dt>
+                                                        <dd>방문미팅 1회, 시안 1종, 디자인가이드</dd>
+                                                    </dl>
+                                                </div>
+                                                <!--// define-list-wrap-->
+                                            </li>
+                                            <li>
+                                                <!--define-list-wrap-->
+                                                <div class="define-list-wrap">
+                                                    <dl>
+                                                        <dt class="pr-5">로고 : </dt>
+                                                        <dd>텍스트형</dd>
+                                                    </dl>
+                                                </div>
+                                                <!--// define-list-wrap-->
+                                            </li>
+                                            <li>
+                                                <!--define-list-wrap-->
+                                                <div class="define-list-wrap">
+                                                    <dl>
+                                                        <dt class="pr-5">선택1 : </dt>
+                                                        <dd>명함 1명, 100장</dd>
+                                                    </dl>
+                                                </div>
+                                                <!--// define-list-wrap-->
+                                            </li>
+                                        </ul>
+                                        <!--// bul-round-->
+                                        <!--define-list-wrap-->
+                                        <div class="define-list-wrap">
+                                            <dl>
+                                                <dt>기본금액</dt>
+                                                <dd class="txt-r">100,000원</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>추가금액</dt>
+                                                <dd class="txt-r">50,000원</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>배송비</dt>
+                                                <dd class="txt-r">0원</dd>
+                                            </dl>
+                                            <dl class="point-area">
+                                                <dt>총 금액</dt>
+                                                <dd class="txt-r">150,000원</dd>
+                                            </dl>
+                                        </div>
+                                        <!--// define-list-wrap-->
+                                    </div>
+                                </div>
+                                <!--// accordion-body-->
+                            </div>
+                            <!--// accordion-section-->
+                            <!--define-list-wrap-->
+                            <div class="define-list-wrap">
+                                <dl>
+                                    <dt>기본금액</dt>
+                                    <dd class="txt-r">100,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>추가금액</dt>
+                                    <dd class="txt-r">50,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배송비</dt>
+                                    <dd class="txt-r">0원</dd>
+                                </dl>
+                                <dl class="point-area">
+                                    <dt>총 금액</dt>
+                                    <dd class="txt-r">150,000원</dd>
+                                </dl>
+                            </div>
+                            <!--// define-list-wrap-->
+                        </div>
+                        <!--// pop-inner-wide-->
+                        <div class="con-mb-base">
+                            <div class="section-tit">고객정보</div>
+                            <!--underline-form-group-->
+                            <div class="underline-form-group">
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">회사명</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="회사명">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">담당자</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="담당자">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">입금자</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="입금자">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">연락처</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100 state-error" type="text" placeholder="연락처">
+                                    <p class="error-mes">연락처를 입력해 주세요.</p>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">이메일</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100 state-error" type="text" placeholder="이메일">
+                                    <p class="error-mes">이메일을 입력해 주세요.(이메일 형식에 맞지 않습니다.)</p>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">주소</label>
+                                    <div class="has-icon-input">
+                                        <input id="inp-sample2" class="inp-base inp-underline w100" type="text" placeholder="우편번호">
+                                        <button class="ui-btn btn-secondary btn-small"><span>우편번호</span></button>
+                                    </div>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="주소">
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="나머지 주소">
+                                    <p class="error-mes">우편번호를 검색해 주세요.</p>
+                                </div>
+                                <div class="form-group col">
+                                    <!--form-check-->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="inp-check" name="" id="check-sample2">
+                                        <label for="check-sample2"><span>세금 계산서 신청</span></label>
+                                    </div>
+                                    <!--// form-check-->
+                                </div>
+                            </div>
+                            <!--// underline-form-group-->
+                        </div>
+                        <div class="con-mb-large">
+                            <div class="section-tit">입금 계좌 안내</div>
+                            <div class="section-wrap full-fill split-large con-mb-thin">
+                                <div class="split">
+                                    <p class="keep-all">우리은행    000-000000-00-000<br>예금주 : ㈜망고스틴소프트</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w-180px"><span>주문하기</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문하기_입력 -->
+
+    <!-- layer popup : 주문하기 -->
+	<div class="dim-layer" id="popup2">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="width:500px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">주문하기</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--result-info-->
+                        <div class="result-info">
+                            <p class="result-tit">주문완료</p>
+                            <span class="result-sub-txt">주문이 완료 되었습니다.</span>
+                        </div>
+                        <!--// result-info-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <ul class="bul-round">
+                                <li>주문내역 및 진행사항은<br><span class="txt-point fn-medium">‘마이페이지 > 주문내역’</span> 에서 확인하실 수 있습니다.</li>
+                            </ul>
+                        </div>
+                        <!--// info-box-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w-180px"><span>주문내역 확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문하기 -->
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+</body>
+</html>

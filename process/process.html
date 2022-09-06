@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-process.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--process-wrap-->
+            <div class="process-wrap process1">
+                <!--process-con-->
+                <div class="process-con">
+                    <!--process-inner-->
+                    <div class="process-inner">
+                        <!--step-tit-wrap-->
+                        <div class="step-tit-wrap">
+                            <div class="draw-bg">
+                                <div class="bg-group">
+                                    <img src="../resource/img/process/main2_bee.png" alt="코비">
+                                    <span class="draw-bg2"><img src="../resource/img/process/main2_bg2.png" alt="꿀통"></span>
+                                    <span class="draw-bg3"><img src="../resource/img/process/main2_bg.png" alt="물감"></span>
+                                    <span class="draw-txt bul-star mo-hide">중복선택 가능</span>
+                                </div>
+                            </div>
+                            <div class="step-tit has-paint">
+                                <span class="txt-point2">필요한 서비스 항목</span>을 선택해주세요
+                                <p class="mo-show"><span class="draw-txt bul-star">중복선택 가능</span></p>
+                            </div>
+                        </div>
+                        <!--// step-tit-wrap-->
+                        <!--check-select-wrap-->
+                        <div class="check-select-wrap">
+                            <!--check-select-->
+                            <ul class="check-select select-type2 type2-large">
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio1" name="">
+                                        <label for="apply-radio1"><span>로고</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio2" name="">
+                                        <label for="apply-radio2"><span>명함</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio3" name="">
+                                        <label for="apply-radio3"><span>소봉투</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio4" name="">
+                                        <label for="apply-radio4"><span>중봉투</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio5" name="">
+                                        <label for="apply-radio5"><span>대봉투</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio6" name="">
+                                        <label for="apply-radio6"><span>리플렛</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio7" name="">
+                                        <label for="apply-radio7"><span>카다로그</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio8" name="">
+                                        <label for="apply-radio8"><span>전단지</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio9" name="">
+                                        <label for="apply-radio9"><span>회사소개</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inp-wrap">
+                                        <input type="checkbox" id="apply-radio10" name="">
+                                        <label for="apply-radio10"><span>현판</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--// check-select-->
+                        </div>
+                        <!--// check-select-wrap-->
+                    </div>
+                    <!--// process-inner-->
+                </div>
+                <!--// process-con-->
+                <!--process-bottom-->
+                <div class="process-bottom">
+                    <div class="step-prev"><button class="ui-btn btn-secondary2 btn-xlarge" onclick="location.href='../main.html'"><span>이전</span></button></div>
+                    <div class="step-next"><button class="ui-btn btn-primary btn-xlarge" onclick="location.href='process2.html'"><span>다음</span></button></div>
+                </div>
+                <!--// process-bottom-->
+            </div>
+            <!--// process-wrap-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="resource/css/ui-base.css"><!--공통-->
+
+    <!-- JS -->
+    <script src="resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="resource/js/common.js"></script>
+
+
+    
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="#"><img src="resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-index : 메인-->
+        <div class="base-index">
+            <!--main-visual-->
+            <div class="main-visual">
+                <!--visual-tit-->
+                <div class="visual-tit">
+                    <!--tit-top-->
+                    <div class="tit-top">
+                        <!--area-sel-wrap-->
+                        <div class="area-sel-wrap">
+                            <div class="area-sel">
+                                <!--drop-down-->
+                                <div class="dropdown">
+                                    <div class="select">
+                                      <span>선택</span>
+                                      <i class="mdi mdi-menu-down"></i>
+                                    </div>
+                                    <input type="hidden" name="selection">
+                                    <ul class="dropdown-menu">
+                                      <li id="brand">브랜드</li>
+                                      <li id="webMobile">웹/모바일</li>
+                                      <li id="founded">창업</li>
+                                    </ul>
+                                  </div>
+                                <!--// drop-down-->
+                                <span class="key-txt">서비스가</span>
+                            </div>
+                            <p class="key-txt">필요하신가요?</p>
+                            <div class="area-sel-depth">
+                                <!--drop-down-->
+                                <div class="dropdown">
+                                    <div class="select">
+                                      <span>선택</span>
+                                      <i class="mdi mdi-menu-down"></i>
+                                    </div>
+                                    <input type="hidden" name="selection">
+                                    <ul class="dropdown-menu">
+                                      <li id="pc">PC사이트</li>
+                                      <li id="mobile">모바일사이트</li>
+                                      <li id="responsive">반응형사이트</li>
+                                      <li id="micro">마이크로사이트</li>
+                                    </ul>
+                                  </div>
+                                <!--// drop-down-->
+                                <span class="key-txt">가 필요합니다.</span>
+                            </div>
+                        </div>
+                        <!--// area-sel-wrap-->
+                        <p class="visual-sub-txt">더 나은 전략을 가진 아이코비 스튜디오가<br>당신의 가치를 담아 제작해드립니다.</p>
+                    </div>
+                    <!--// tit-top-->
+                    <!--btn-wrap-->
+                    <div class="btn-wrap">
+                        <button class="ui-btn btn-primary btn-xlarge" onclick="location.href='process/process.html'"><span>시작하기</span></button>
+                    </div>
+                    <!--// btn-wrap-->
+                </div>
+                <!--// visual-tit-->
+                <!--visual-img-->
+                <div class="visual-img">
+                    <img src="resource/img/main_visual.gif" alt="">
+                </div>
+                <!--// visual-img-->
+            </div>
+            <!--// main-visual-->
+        </div>
+        <!--// base-index : 메인-->
+
+    </div>
+    <!--// base-wrap-->
+
+    
+</body>
+</html>

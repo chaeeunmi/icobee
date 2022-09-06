@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <!-- <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-login-box-line"></i><span class="blind">로그인</span></button></li> -->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <li class="mo-hide alarm-on"><!--신규알림 있을 때 alarm-on 클래스추가-->
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn has-popover"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button>
+                                <!--popover-wrap-->
+                                <div class="popover-wrap">
+                                    <div class="popover-overflow">
+                                        <div class="popover-header">알림<button class="ui-btn only-icon-btn popover-close"><i class="mdi mdi-close"></i><span class="blind">알림닫기</span></button></div>
+                                        <div class="popover-content">
+                                            <ul class="alarm-list">
+                                                <li class="has-new"><a href="#">주문하신 상품의 제작이 완료 되었습니다.</a></li>
+                                                <li><a href="#">문의주신 글에 대한 답변이 완료 되었습니다.</a></li>
+                                                <li><span>회원정보가 수정되었습니다.</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// popover-wrap-->
+                            </li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn" id="sitemap-toggle"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                    <!--sitemap-overlay-->
+                    <div class="sitemap-overlay">
+                        <!--sitemap-wrap-->
+                        <div class="sitemap-wrap">
+                            <!--sitemap-top-->
+                            <div class="sitemap-top">
+                                <div class="left">
+                                    <nav class="overlay-menu">
+                                        <ul>
+                                            <li><a href="#">서비스</a></li>
+                                            <li><a href="#">포트폴리오</a></li>
+                                            <li><a href="#">견적문의</a></li>
+                                            <li><a href="#">고객지원</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><a href="#">회사소개</a></li>
+                                        <li><a href="#">이용약관</a></li>
+                                        <li><a href="#">개인정보취급방침</a></li>
+                                        <li><a href="#">제휴문의</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// sitemap-top-->
+                            <!--sitemap-bottom-->
+                            <div class="sitemap-bottom">
+                                <!--company-info-->
+                                <div class="company-info">
+                                    <div class="info">
+                                        <p>(주) 망고스틴소프트<br>서울특별시 송파구 법원로 92, 9층 903호(문정동, 파트너스1)</p>
+                                        <ul>
+                                            <li>T. 02)430-5930</li>
+                                            <li>F. 02)430-5931</li>
+                                            <li>E. job@mangosteensoft.co.kr</li>
+                                        </ul>
+                                    </div>                            
+                                    <p class="copyright">ⓒ icobee-Studio. All rights reserved.</p>
+                                </div>
+                                <!--// company-info-->
+                                <!--sns-wrap-->
+                                <div class="sns-wrap">
+                                    <ul>
+                                        <li><a href="#"><i class="ri-instagram-line"></i>Instagram</a></li>
+                                        <li><a href="#"><i class="ri-facebook-fill"></i>Facebook</a></li>
+                                        <li><a href="#"><i class="ri-file-list-3-line"></i>Newsletter</a></li>
+                                    </ul>
+                                </div>
+                                <!--// sns-wrap-->
+                            </div>
+                            <!--// sitemap-bottom-->
+                        </div>
+                        <!--// sitemap-wrap-->
+                    </div>
+                    <!--//sitemap-overlay-->
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--sub-content-->
+            <div class="sub-content">
+                
+            </div>
+            <!--// sub-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <!-- layer popup : 하단팝업 -->
+	<div class="dim-layer has-bottom-pop" id="popup1">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">알림</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <ul class="alarm-list">
+                            <li class="has-new"><a href="#">주문하신 상품의 제작이 완료 되었습니다.</a></li>
+                            <li><a href="#">문의주신 글에 대한 답변이 완료 되었습니다.</a></li>
+                            <li><span>회원정보가 수정되었습니다.</span></li>
+                        </ul>
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 하단팝업 -->
+
+
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script>
+
+</body>
+</html>

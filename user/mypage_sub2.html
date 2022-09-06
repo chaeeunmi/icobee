@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--full-content-->
+            <div class="full-content">
+                <!--side-con-wrap-->
+                <div class="side-con-wrap">
+                    <!--my-link-text-->
+                    <div class="my-link-text">
+                        <div class="my-group">
+                            <span class="my-name">사용자</span>님, 환영합니다.<br>
+                            <a href="mypage_sub1.html" class="my-link">회원정보</a>를 업데이트 해주세요.
+                        </div>
+                        <div class="my-group">
+                            최근 1개월간 0건 주문하셨고,<br>
+                            자세한 내용은 <a href="mypage_sub2.html" class="my-link page-on">주문내역</a>에서 확인하실 수 있습니다.
+                        </div>
+                        <div class="my-group">
+                            최근 문의 주셨던 1건의 <a href="mypage_sub3.html" class="my-link">문의</a>는<br>
+                            현재 접수되었습니다.
+                        </div>
+                        <div class="my-group">
+                            정보보호를 위해 3개월에 한번<br>
+                            <a href="#" class="my-link">비밀번호 변경</a>을 해주세요.
+                        </div>
+                    </div>
+                    <!--// my-link-text-->
+                </div>
+                <!--// side-con-wrap-->
+                <!--con-wrap-->
+                <div class="con-wrap">
+                    <!--mo-page-tab-->
+                    <ul class="mo-page-tab">
+                        <li><a href="mypage_sub1.html">회원정보</a></li>
+                        <li class="page-on"><a href="mypage_sub2.html">주문내역</a></li>
+                        <li><a href="mypage_sub3.html">문의</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                    </ul>
+                    <!--mo-page-tab-->
+                    <!--sub-tit-wrap-->
+                    <div class="sub-tit-wrap">
+                        <p class="sub-tit">주문내역</p>
+                    </div>
+                    <!--// sub-tit-wrap-->
+                    <!--bul-round-->
+                    <ul class="bul-round">
+                        <li>주문내역은 최대 12개월까지 조회하실 수 있습니다.</li>
+                        <li>이전 주문 내역을 확인하고 싶으시면 기간을 변경하여 조회해주세요.</li>
+                        <li>궁금하신 사항은 <a href="#" class="ui-btn btn-text-link btn-underline ver-a-n">1:1문의</a> 를 이용해 주세요.</li>
+                    </ul>
+                    <!--// bul-round-->
+                    <!--search-box-->
+                    <div class="search-box">
+                        <!--radio-select-->
+                        <ul class="radio-select select-fill small-size">
+                            <li>
+                                <div class="inp-wrap">
+                                    <input type="radio" id="apply-radio1" name="section2" checked>
+                                    <label for="apply-radio1"><span>3일</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-wrap">
+                                    <input type="radio" id="apply-radio2" name="section2">
+                                    <label for="apply-radio2"><span>7일</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-wrap">
+                                    <input type="radio" id="apply-radio3" name="section2">
+                                    <label for="apply-radio3"><span>1개월</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-wrap">
+                                    <input type="radio" id="apply-radio4" name="section2">
+                                    <label for="apply-radio4"><span>3개월</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-wrap">
+                                    <input type="radio" id="apply-radio5" name="section2">
+                                    <label for="apply-radio5"><span>6개월</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-wrap">
+                                    <input type="radio" id="apply-radio6" name="section2">
+                                    <label for="apply-radio6"><span>12개월</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--// radio-select-->
+                        <div class="form-group row w-600px">
+                            <div class="inp-group">
+                                <div class="cal-inp">
+                                    <input type="text" class="inp-base" id="datepicker1">
+                                </div>
+                                <span class="dash-txt">~</span>
+                                <div class="cal-inp">
+                                    <input type="text" class="inp-base" id="datepicker2">
+                                </div>
+                            </div>
+                            <button class="ui-btn btn-primary2 w-120px"><span>조회</span></button>
+                        </div>
+                    </div>
+                    <!--// search-box-->
+                    <!--order-process-wrap-->
+                    <div class="order-process-wrap">
+                        <ul class="order-process">
+                            <li class="order-list1">
+                                <dl>
+                                    <dt>
+                                        <span class="order-step">STEP1</span>
+                                        <p class="order-tit">주문접수</p>
+                                    </dt>
+                                    <dd>3일이내 미결재 시<br> 자동취소 됩니다.</dd>
+                                </dl>
+                            </li>
+                            <li class="order-list2">
+                                <dl>
+                                    <dt>
+                                        <span class="order-step">STEP2</span>
+                                        <p class="order-tit">주문확인</p>
+                                    </dt>
+                                    <dd>입금확인 후 담당자가<br> 전화드립니다.</dd>
+                                </dl>
+                            </li>
+                            <li class="order-list3">
+                                <dl>
+                                    <dt>
+                                        <span class="order-step">STEP3</span>
+                                        <p class="order-tit">작업 중</p>
+                                    </dt>
+                                    <dd>작업자가 작업을<br> 진행합니다.</dd>
+                                </dl>
+                            </li>
+                            <li class="order-list4">
+                                <dl>
+                                    <dt>
+                                        <span class="order-step">STEP4</span>
+                                        <p class="order-tit">인쇄</p>
+                                    </dt>
+                                    <dd>인쇄 진행 후<br> 발송처리 됩니다.</dd>
+                                </dl>
+                            </li>
+                            <li class="order-list5">
+                                <dl>
+                                    <dt>
+                                        <span class="order-step">STEP5</span>
+                                        <p class="order-tit">배송 중</p>
+                                    </dt>
+                                    <dd>배송조회가<br> 가능합니다.</dd>
+                                </dl>
+                            </li>
+                            <li class="order-list6">
+                                <dl>
+                                    <dt>
+                                        <span class="order-step">STEP6</span>
+                                        <p class="order-tit">작업완료</p>
+                                    </dt>
+                                    <dd>모든 작업이<br> 완료되었습니다.</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// order-process-wrap-->
+                    <!--tbl-has-paging-->
+                    <div class="tbl-has-paging">
+                        <!--tbl-wrap-->
+                        <div class="tbl-wrap tbl-resposive">
+                            <!--tbl-base-->
+                            <table class="tbl-base td-align-center">
+                                <colgroup>
+                                    <col style="width:100px;">
+                                    <col style="width:100px;">
+                                    <col>
+                                    <col style="width:150px;">
+                                    <col style="width:120px;">
+                                    <col style="width:100px;">
+                                    <col style="width:140px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">주문번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">결제금액</th>
+                                        <th scope="col">주문일</th>
+                                        <th scope="col">진행사항</th>
+                                        <th scope="col">비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mo-hide">4</td>
+                                        <td>0000000</td>
+                                        <td class="txt-l"><a href="#" data-target="#orderViewPop" class="popup-open" onclick="return false;">아이코비 브랜드 1+1</a></td>
+                                        <td class="txt-r">000,000원</td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>주문접수</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mo-hide">3</td>
+                                        <td>0000000</td>
+                                        <td class="txt-l"><a href="#" data-target="#orderViewPop" class="popup-open" onclick="return false;">아이코비 브랜드 1+1</a></td>
+                                        <td class="txt-r">000,000원</td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>주문접수</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mo-hide">2</td>
+                                        <td>0000000</td>
+                                        <td class="txt-l"><a href="#" data-target="#orderViewPop" class="popup-open" onclick="return false;">아이코비 브랜드 1+1</a></td>
+                                        <td class="txt-r">000,000원</td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>주문접수</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mo-hide">1</td>
+                                        <td>0000000</td>
+                                        <td class="txt-l"><a href="#" data-target="#orderViewPop" class="popup-open" onclick="return false;">아이코비 브랜드 1+1</a></td>
+                                        <td class="txt-r">000,000원</td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>주문접수</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--// tbl-base-->
+                        </div>
+                        <!--// tbl-wrap-->
+                        <!--tbl-state-->
+                        <div class="tbl-state">
+                            <p class="now-page"><span>1</span>/10</p>
+                        </div>
+                        <!--// tbl-state-->
+                        <!--paging-wrap-->
+                        <div class="paging-wrap">
+                            <ul>
+                                <li class="go-first"><button class="only-icon-btn" disabled><i class="mdi mdi-page-first"></i><span class="blind">처음으로</span></button></li>
+                                <li class="go-prev"><button class="only-icon-btn" disabled><i class="mdi mdi-chevron-left"></i><span class="blind">이전으로</span></button></li>
+                                <li class="page-on"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li class="go-next"><button class="only-icon-btn"><i class="mdi mdi-chevron-right"></i><span class="blind">다음으로</span></button></li>
+                                <li class="go-last"><button class="only-icon-btn"><i class="mdi mdi-page-last"></i><span class="blind">마지막으로</span></button></li>
+                            </ul>
+                        </div>
+                        <!--paging-wrap-->
+                    </div>
+                    <!--// tbl-has-paging-->
+
+                </div>
+                <!--// con-wrap-->
+            </div>
+            <!--// full-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <!-- layer popup : 주문내역 -->
+	<div class="dim-layer" id="orderViewPop">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:700px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+                        <div class="tit">
+							<span class="pop-tit">주문정보 상세내역</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--insert-txt-wrap-->
+                        <div class="insert-txt-wrap">
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">창업패키지 1</span> 요금제를<br>선택하셨습니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">방문미팅 1회<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">템플릿<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">반응형 홈페이지<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">1년 무상 유지관리</span> 기본사항 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step1">
+                                로고는 <span class="insert-txt insert-on">심볼형<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt insert-on">20,000원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                페이지는 <span class="insert-txt">n페이지<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step2">
+                                첫번째 선택은<br>
+                                <span class="insert-txt">명함<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">1명<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">100장</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                두번째 선택은<br>
+                                <span class="insert-txt">도메인<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">1년</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step3">
+                                브랜드(회사)명은<br>
+                                <span class="insert-txt">직접입력</span>이고<br>
+                                희망도메인은
+                                <span class="insert-txt">직접입력</span>입니다.<br>
+                                <span class="insert-txt">선택</span> 색상의<br>
+                                <span class="insert-txt">선택</span> 디자인을 원해요.
+                            </div>
+                            <!--// txt-group-->
+                        </div>
+                        <!--// insert-txt-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+                <!--pop-footer-->
+				<div class="pop-footer">
+                    <!--con-btn-wrap-->
+                    <div class="con-btn-wrap txt-c">
+                        <button class="ui-btn btn-primary2 w100"><span>확인</span></button>
+                    </div>
+                    <!--// con-btn-wrap-->
+				</div>
+				<!--// pop-footer-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문내역 -->
+
+    <script>
+        $(document).ready(function(){
+            $(function() {
+                $("#datepicker1, #datepicker2").datepicker();
+            });
+        });
+    </script>
+
+</body>
+</html>

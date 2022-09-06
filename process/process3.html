@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-process.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+    
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--process-wrap-->
+            <div class="process-wrap process3">
+                <!--process-con-->
+                <div class="process-con">
+                    <!--process-left-->
+                    <div class="process-left">
+                        <!--process-left-inner-->
+                        <div class="process-left-inner">
+                            <!--survey-tit-->
+                            <div class="survey-tit">
+                                <div class="survey-bg"><img src="../resource/img/process/main4_bee.png" alt="아이코비"></div>
+                                <!--step-tit-wrap-->
+                                <div class="step-tit-wrap">
+                                    <div class="step-tit has-paint"><span class="txt-point2">세부항목</span>을 입력해주세요<div class="dots"></div></div>
+                                </div>
+                                <!--// step-tit-wrap-->
+                                <!--bul-round-->
+                                <ul class="bul-round fn-medium">
+                                    <li>브랜드 제작 시 확인하시고 싶은 부분이 있으신가요? (사이즈, 용지 등)<button class="ui-btn btn-text-link btn-underline ml-10"><span>바로가기</span></button></li>
+                                    <li>찾으시는 요금제가 없으신가요?<button class="ui-btn btn-text-link btn-underline ml-10"><span>바로가기</span></button></li>
+                                </ul>
+                                <!--// bul-round-->
+                            </div>
+                            <!--// survey-tit-->
+                            <!--survey-con-->
+                            <div class="survey-con">
+                                <!--survey-group-->
+                                <div class="survey-group step1-call-scroll">
+                                    <!--conts-wrap-->
+                                    <div class="conts-wrap">
+                                        <!--conts-left-->
+                                        <div class="conts-left">
+                                            <p class="conts-tit"><span class="conts-info">STEP1</span>기본선택 사항</p>
+                                        </div>
+                                        <!--// conts-left-->
+                                        <!--conts-right-->
+                                        <div class="conts-right">
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">로고<span class="tit-info">기본선택 1</span></p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--radio-select-->
+                                                    <ul class="radio-select select-type2 logo-type large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio" name="section1">
+                                                                <label for="apply-radio">
+                                                                    <span class="exp-img">텍스트형<span class="text-type"></span></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio0" name="section1">
+                                                                <label for="apply-radio0">
+                                                                    <span class="exp-img">심볼형<span class="symbol-type"></span></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// radio-select-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">페이지<span class="tit-info">기본선택 2</span></p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--radio-select-->
+                                                    <ul class="radio-select large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio1" name="section2">
+                                                                <label for="apply-radio1"><span>5 페이지</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio2" name="section2">
+                                                                <label for="apply-radio2"><span>10 페이지</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio3" name="section2">
+                                                                <label for="apply-radio3"><span>20 페이지</span></label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// radio-select-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                        </div>
+                                        <!--// conts-right-->
+                                    </div>
+                                    <!--// conts-wrap-->
+                                </div>
+                                <!--// survey-group-->
+                                <!--survey-group-->
+                                <div class="survey-group step2-call-scroll">
+                                    <!--conts-wrap-->
+                                    <div class="conts-wrap">
+                                        <!--conts-left-->
+                                        <div class="conts-left">
+                                            <p class="conts-tit"><span class="conts-info">STEP2</span>추가선택 사항</p>
+                                        </div>
+                                        <!--// conts-left-->
+                                        <!--conts-right-->
+                                        <div class="conts-right">
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">선택사항 1</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--radio-select-->
+                                                    <ul class="radio-select large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio4" name="section3">
+                                                                <label for="apply-radio4"><span>명함</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio5" name="section3">
+                                                                <label for="apply-radio5"><span>소봉투</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio6" name="section3">
+                                                                <label for="apply-radio6"><span>중봉투</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio7" name="section3">
+                                                                <label for="apply-radio7"><span>대봉투</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio8" name="section3">
+                                                                <label for="apply-radio8"><span>카달로그</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio9" name="section3">
+                                                                <label for="apply-radio9"><span>전단지</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio10" name="section3">
+                                                                <label for="apply-radio10"><span>회사소개</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio11" name="section3">
+                                                                <label for="apply-radio11"><span>현판</span></label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// radio-select-->
+                                                    <!--detail-select-->
+                                                    <div class="detail-select">
+                                                        <p class="detail-tit"><span class="point" id="choice32">명함</span>세부항목</p>
+                                                        <!--detail-con-->
+                                                        <div class="detail-con">
+                                                            <div class="split"><input type="text" id="write1" class="inp-base inp-small w-60px"><span class="middle-txt">명</span></div>
+                                                            <div class="split"><span class="num-txt" id="choice52">100</span>장</div>
+                                                        </div>
+                                                        <!--// detail-con-->
+                                                        <!--detail-con-->
+                                                        <div class="detail-con">
+                                                            <!--radio-select-->
+                                                            <ul class="radio-select select-type2 paper-type">
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio17" name="section5">
+                                                                        <label for="apply-radio17"><span>100</span></label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio18" name="section5">
+                                                                        <label for="apply-radio18"><span>200</span></label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio19" name="section5">
+                                                                        <label for="apply-radio19"><span>300</span></label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio20" name="section5">
+                                                                        <label for="apply-radio20"><span>400</span></label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                            <!--// radio-select-->
+                                                        </div>
+                                                        <!--// detail-con-->
+                                                    </div>
+                                                    <!--// detail-select-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">선택사항 2</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--radio-select-->
+                                                    <ul class="radio-select large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio12" name="section6">
+                                                                <label for="apply-radio12"><span>모바일 홈페이지</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio13" name="section6">
+                                                                <label for="apply-radio13"><span>랜딩페이지</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio14" name="section6">
+                                                                <label for="apply-radio14"><span>마이크로사이트</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio15" name="section6">
+                                                                <label for="apply-radio15"><span>호스팅</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio16" name="section6">
+                                                                <label for="apply-radio16"><span>도메인</span></label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// radio-select-->
+                                                    <!--detail-select-->
+                                                    <div class="detail-select">
+                                                        <p class="detail-tit"><span class="point">도메인</span>세부항목</p>
+                                                        <!--detail-con-->
+                                                        <div class="detail-con">
+                                                            <!--radio-select-->
+                                                            <ul class="radio-select select-type2 calendar-type">
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio21" name="section7">
+                                                                        <label for="apply-radio21"><span>1년</span></label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio22" name="section7">
+                                                                        <label for="apply-radio22"><span>2년</span></label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio23" name="section7">
+                                                                        <label for="apply-radio23"><span>3년</span></label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="inp-wrap">
+                                                                        <input type="radio" id="apply-radio24" name="section7">
+                                                                        <label for="apply-radio24"><span>4년</span></label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                            <!--// radio-select-->
+                                                        </div>
+                                                        <!--// detail-con-->
+                                                    </div>
+                                                    <!--// detail-select-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                        </div>
+                                        <!--// conts-right-->
+                                    </div>
+                                    <!--// conts-wrap-->
+                                </div>
+                                <!--// survey-group-->
+                                <!--survey-group-->
+                                <div class="survey-group step3-call-scroll">
+                                    <!--conts-wrap-->
+                                    <div class="conts-wrap">
+                                        <!--conts-left-->
+                                        <div class="conts-left">
+                                            <p class="conts-tit"><span class="conts-info">STEP3</span>제작 시 참고사항</p>
+                                        </div>
+                                        <!--// conts-left-->
+                                        <!--conts-right-->
+                                        <div class="conts-right">
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">브랜드명</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <input type="text" id="write2" class="inp-base inp-underline w-400px" placeholder="브랜드(회사) 명">
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">도메인 보유</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--radio-select-->
+                                                    <ul class="radio-select large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio25" name="radio-sample6">
+                                                                <label for="apply-radio25"><span>유</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio26" name="radio-sample6">
+                                                                <label for="apply-radio26"><span>무</span></label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// radio-select-->
+                                                    <!--section-wrap-->
+                                                    <div class="section-wrap full-fill">
+                                                        <div class="split">
+                                                            <input type="text" id="write3" class="inp-base inp-underline" placeholder="희망도메인">
+                                                        </div>
+                                                        <div class="split">
+                                                            <input type="text" id="write4" class="inp-base inp-underline" placeholder="희망도메인">
+                                                        </div>
+                                                    </div>
+                                                    <!--// section-wrap-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">색상</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--radio-select-->
+                                                    <ul class="radio-select color-type large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio27" name="section8">
+                                                                <label for="apply-radio27">
+                                                                    <div class="color-shape color-wh"><span class="color-inner"></span></div>
+                                                                    <span>흰색</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio28" name="section8">
+                                                                <label for="apply-radio28">
+                                                                    <div class="color-shape color-bk"><span class="color-inner"></span></div>
+                                                                    <span>검정</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio29" name="section8">
+                                                                <label for="apply-radio29">
+                                                                    <div class="color-shape color-blue"><span class="color-inner"></span></div>
+                                                                    <span>파랑</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio30" name="section8">
+                                                                <label for="apply-radio30">
+                                                                    <div class="color-shape color-navy"><span class="color-inner"></span></div>
+                                                                    <span>남색</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio31" name="section8">
+                                                                <label for="apply-radio31">
+                                                                    <div class="color-shape color-sky"><span class="color-inner"></span></div>
+                                                                    <span>하늘</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio32" name="section8">
+                                                                <label for="apply-radio32">
+                                                                    <div class="color-shape color-red"><span class="color-inner"></span></div>
+                                                                    <span>빨강</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio33" name="section8">
+                                                                <label for="apply-radio33">
+                                                                    <div class="color-shape color-org"><span class="color-inner"></span></div>
+                                                                    <span>주황</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="radio" id="apply-radio34" name="section8">
+                                                                <label for="apply-radio34">
+                                                                    <div class="color-shape color-pup"><span class="color-inner"></span></div>
+                                                                    <span>보라</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// radio-select-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">디자인 방향<span class="tit-info">두 가지 선택</span></p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--check-select-->
+                                                    <ul class="check-select large-size">
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check1" name="check1">
+                                                                <label for="apply-check1"><span>고급스러운</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check2" name="check1">
+                                                                <label for="apply-check2"><span>귀여움</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check3" name="check1">
+                                                                <label for="apply-check3"><span>복고적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check4" name="check1">
+                                                                <label for="apply-check4"><span>신비적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check5" name="check1">
+                                                                <label for="apply-check5"><span>심플한</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check6" name="check1">
+                                                                <label for="apply-check6"><span>안정적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check7" name="check1">
+                                                                <label for="apply-check7"><span>남성적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check8" name="check1">
+                                                                <label for="apply-check8"><span>여성적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check9" name="check1">
+                                                                <label for="apply-check9"><span>역동적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check10" name="check1">
+                                                                <label for="apply-check10"><span>재미있는</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check11" name="check1">
+                                                                <label for="apply-check11"><span>클래식한</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check12" name="check1">
+                                                                <label for="apply-check12"><span>실험적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check13" name="check1">
+                                                                <label for="apply-check13"><span>화려한</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check14" name="check1">
+                                                                <label for="apply-check14"><span>강렬한</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check15" name="check1">
+                                                                <label for="apply-check15"><span>깔끔한</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check16" name="check1">
+                                                                <label for="apply-check16"><span>자연적인</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="inp-wrap">
+                                                                <input type="checkbox" id="apply-check17" name="check1">
+                                                                <label for="apply-check17"><span>모던한</span></label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!--// check-select-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">첨부파일</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <!--file-wrap-->
+                                                    <div class="file-wrap">
+                                                        <!--file-top-->
+                                                        <div class="file-top">
+                                                            <!--file-upload-btn-->
+                                                            <div class="file-upload-btn">
+                                                                <form>
+                                                                    <input type="file" id="sample01"/>
+                                                                    <label for="sample01"><button type="button" class="ui-btn btn-primary2"><span>파일첨부</span></button></label>
+                                                                </form>
+                                                            </div>
+                                                            <!--// file-upload-btn-->
+                                                            <p class="bul-star noti-text">파일형식 : .pdf .doc .docx .xls .xlsx .hwp .hwpx .jpg .gif .png .zip  최대50MB</p>
+                                                        </div>
+                                                        <!--// file-top-->
+                                                        <!--file-bottom-->
+                                                        <div class="file-bottom">
+                                                            <div class="file-list">
+                                                                <p class="file-name ellip">파일이름.pdf</p>
+                                                                <div class="right"><button><i class="mdi mdi-close"></i><span class="blind">삭제</span></button></div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// file-bottom-->
+                                                    </div>
+                                                    <!--// file-wrap-->
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-->
+                                            <div class="conts-item">
+                                                <p class="conts-item-tit">템플릿</p>
+                                                <!--conts-item-con-->
+                                                <div class="conts-item-con">
+                                                    <button data-target="#popup1" class="ui-btn btn-primary2 popup-open"><span>선택</span></button>
+                                                    <div class="thum-img">
+                                                        <img src="../resource/img/main_visual.png" alt="이미지">
+                                                    </div>
+                                                </div>
+                                                <!--// conts-item-con-->
+                                            </div>
+                                            <!--// conts-item-->
+                                            <!--conts-item-bottom-->
+                                            <div class="conts-item-bottom mo-hide">
+                                                <!--btn-group-->
+                                                <div class="btn-group">
+                                                    <button class="ui-btn btn-secondary btn-xlarge"><span>장바구니</span></button>
+                                                    <button data-target="#popup3" class="ui-btn btn-primary btn-xlarge popup-open"><span>주문하기</span></button>
+                                                </div>
+                                                <!--// btn-group-->
+                                            </div>
+                                            <!--// conts-item-bottom-->
+                                        </div>
+                                        <!--// conts-right-->
+                                    </div>
+                                    <!--// conts-wrap-->
+                                </div>
+                                <!--// survey-group-->
+                            </div>
+                            <!--// survey-con-->
+
+                        </div>
+                        <!--// process-left-inner-->
+                    </div>
+                    <!--// process-left-->
+                    <!--process-right-->
+                    <div class="process-right">
+                        <!--insert-txt-wrap-->
+                        <div class="insert-txt-wrap process3-scrollbar mo-hide">
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">창업패키지 1</span> 요금제를<br>선택하셨습니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">방문미팅 1회<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">템플릿<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">반응형 홈페이지<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">1년 무상 유지관리</span> 기본사항 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step1">
+                                로고는 <span class="insert-txt" id="choice1">선택<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                페이지는 <span class="insert-txt" id="choice2">선택<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step2">
+                                첫번째 선택은<br>
+                                <span class="insert-txt" id="choice3">선택<em class="comma-txt">,</em></span>
+                                <span class="insert-txt" id="input1">0명<em class="comma-txt">,</em></span>
+                                <span class="insert-txt" id="choice5">0장</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                두번째 선택은<br>
+                                <span class="insert-txt" id="choice6">도메인<em class="comma-txt">,</em></span>
+                                <span class="insert-txt" id="choice7">n년</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step3">
+                                브랜드(회사)명은<br>
+                                <span class="insert-txt" id="input2">직접입력</span>이고<br>
+                                희망도메인은
+                                <span class="insert-txt" id="input3">직접입력</span>입니다.<br>
+                                <span class="insert-txt" id="choice8">선택</span> 색상의<br>
+                                <span class="insert-txt" id="check1">선택</span> 디자인을 원해요.
+                            </div>
+                            <!--// txt-group-->
+                        </div>
+                        <!--// insert-txt-wrap-->
+                        <!--btn-group-->
+                        <div class="btn-group mo-show"><!--모바일용 하단버튼-->
+                            <button class="ui-btn btn-secondary btn-xlarge"><span>장바구니</span></button>
+                            <button data-target="#popup4" class="ui-btn btn-primary btn-xlarge popup-open"><span>주문서</span></button>
+                        </div>
+                        <!--// btn-group-->
+                    </div>
+                    <!--// process-right-->
+                </div>
+                <!--// process-con-->
+            </div>
+            <!--// process-wrap-->
+        </div>
+        <!--// base-container-->
+    </div>
+    <!--// base-wrap-->
+    
+
+    <!-- layer popup : 템플릿 선택 -->
+	<div class="dim-layer" id="popup1">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="width:800px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">템플릿 선택</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--radio-tab-wrap-->
+                        <div class="radio-tab-wrap">
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="tab-1"># 공공기관</li>
+                                <li class="tab-link" data-tab="tab-2"># 기업</li>
+                                <li class="tab-link" data-tab="tab-3"># 교육</li>
+                                <li class="tab-link" data-tab="tab-4"># 쇼핑</li>
+                            </ul>
+                            <div id="tab-1" class="tab-content current">
+                                <!--radio-select-->
+                                <ul class="radio-select thum-type">
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio35" name="radio-sample8">
+                                            <label for="apply-radio35">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio36" name="radio-sample8">
+                                            <label for="apply-radio36">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio37" name="radio-sample8">
+                                            <label for="apply-radio37">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio38" name="radio-sample8">
+                                            <label for="apply-radio38">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio39" name="radio-sample8">
+                                            <label for="apply-radio39">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio40" name="radio-sample8">
+                                            <label for="apply-radio40">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio41" name="radio-sample8">
+                                            <label for="apply-radio41">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio42" name="radio-sample8">
+                                            <label for="apply-radio42">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio43" name="radio-sample8">
+                                            <label for="apply-radio43">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inp-wrap">
+                                            <input type="radio" id="apply-radio44" name="radio-sample8">
+                                            <label for="apply-radio44">
+                                                <span class="exp-img"><a href="#" target="_blank"><img src="../resource/img/process/thum_sample.png" alt=""></a></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--// radio-select-->
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                222222
+                            </div>
+                            <div id="tab-3" class="tab-content">
+                                333333
+                            </div>
+                            <div id="tab-4" class="tab-content">
+                                444444
+                            </div>
+                        </div>
+                        <!--// radio-tab-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+                <!--pop-footer-->
+				<div class="pop-footer">
+                    <!--con-btn-wrap-->
+                    <div class="con-btn-wrap txt-c">
+                        <button class="ui-btn btn-primary btn-large w-150px mo100"><span>선택</span></button>
+                    </div>
+                    <!--// con-btn-wrap-->
+				</div>
+				<!--// pop-footer-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 템플릿 선택 -->
+
+    <!-- layer popup : 주문서 -->
+	<div class="dim-layer has-bottom-pop" id="popup4">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">주문서</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--insert-txt-wrap-->
+                        <div class="insert-txt-wrap">
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">창업패키지 1</span> 요금제를<br>선택하셨습니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                <span class="insert-txt insert-on">방문미팅 1회<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">템플릿<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">반응형 홈페이지<em class="comma-txt">,</em></span>
+                                <span class="insert-txt insert-on">1년 무상 유지관리</span> 기본사항 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step1">
+                                로고는 <span class="insert-txt insert-on">심볼형<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt insert-on">20,000원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                페이지는 <span class="insert-txt">n페이지<em class="comma-txt">,</em></span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step2">
+                                첫번째 선택은<br>
+                                <span class="insert-txt">명함<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">1명<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">100장</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group">
+                                두번째 선택은<br>
+                                <span class="insert-txt">도메인<em class="comma-txt">,</em></span>
+                                <span class="insert-txt">1년</span><br>
+                                추가요금은 <span class="insert-txt">0원</span> 입니다.
+                            </div>
+                            <!--// txt-group-->
+                            <!--txt-group-->
+                            <div class="txt-group txt-step3">
+                                브랜드(회사)명은<br>
+                                <span class="insert-txt">직접입력</span>이고<br>
+                                희망도메인은
+                                <span class="insert-txt">직접입력</span>입니다.<br>
+                                <span class="insert-txt">선택</span> 색상의<br>
+                                <span class="insert-txt">선택</span> 디자인을 원해요.
+                            </div>
+                            <!--// txt-group-->
+                        </div>
+                        <!--// insert-txt-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+                <!--pop-footer-->
+				<div class="pop-footer">
+                    <!--con-btn-wrap-->
+                    <div class="con-btn-wrap flex-box">
+                        <button type="button" data-target="#popup3" class="ui-btn btn-primary btn-large flex-grow1 popup-open"><span>주문하기</span></button>
+                    </div>
+                    <!--// con-btn-wrap-->
+				</div>
+				<!--// pop-footer-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문서 -->
+
+    <!-- layer popup : 주문하기_입력 -->
+	<div class="dim-layer" id="popup3">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:520px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">주문하기</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner pt-0">
+						<!---------- 내용 ---------->
+                        <!--pop-inner-wide-->
+                        <div class="pop-inner-wide bg-fill bd-b">
+                            <!--accordion-section-->
+                            <div class="accordion-section border-accordion">
+                                <!--accordion-body-->
+                                <div class="accordion-body"><!--열려있을 때 active 클래스추가-->
+                                    <div class="accordion-label label-click-open">
+                                        <div class="accord-tit">아이코비 브랜드 1+1</div>
+                                        <span class="accord-icon"></span>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <!--bul-round-->
+                                        <ul class="bul-round">
+                                            <li>
+                                                <!--define-list-wrap-->
+                                                <div class="define-list-wrap">
+                                                    <dl>
+                                                        <dt class="pr-5">기본사항 : </dt>
+                                                        <dd>방문미팅 1회, 시안 1종, 디자인가이드</dd>
+                                                    </dl>
+                                                </div>
+                                                <!--// define-list-wrap-->
+                                            </li>
+                                            <li>
+                                                <!--define-list-wrap-->
+                                                <div class="define-list-wrap">
+                                                    <dl>
+                                                        <dt class="pr-5">로고 : </dt>
+                                                        <dd>텍스트형</dd>
+                                                    </dl>
+                                                </div>
+                                                <!--// define-list-wrap-->
+                                            </li>
+                                            <li>
+                                                <!--define-list-wrap-->
+                                                <div class="define-list-wrap">
+                                                    <dl>
+                                                        <dt class="pr-5">선택1 : </dt>
+                                                        <dd>명함 1명, 100장</dd>
+                                                    </dl>
+                                                </div>
+                                                <!--// define-list-wrap-->
+                                            </li>
+                                        </ul>
+                                        <!--// bul-round-->
+                                        <!--define-list-wrap-->
+                                        <div class="define-list-wrap">
+                                            <dl>
+                                                <dt>기본금액</dt>
+                                                <dd class="txt-r">100,000원</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>추가금액</dt>
+                                                <dd class="txt-r">50,000원</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>배송비</dt>
+                                                <dd class="txt-r">0원</dd>
+                                            </dl>
+                                            <dl class="point-area">
+                                                <dt>총 금액</dt>
+                                                <dd class="txt-r">150,000원</dd>
+                                            </dl>
+                                        </div>
+                                        <!--// define-list-wrap-->
+                                    </div>
+                                </div>
+                                <!--// accordion-body-->
+                            </div>
+                            <!--// accordion-section-->
+                            <!--define-list-wrap-->
+                            <div class="define-list-wrap">
+                                <dl>
+                                    <dt>기본금액</dt>
+                                    <dd class="txt-r">100,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>추가금액</dt>
+                                    <dd class="txt-r">50,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배송비</dt>
+                                    <dd class="txt-r">0원</dd>
+                                </dl>
+                                <dl class="point-area">
+                                    <dt>총 금액</dt>
+                                    <dd class="txt-r">150,000원</dd>
+                                </dl>
+                            </div>
+                            <!--// define-list-wrap-->
+                        </div>
+                        <!--// pop-inner-wide-->
+                        <div class="con-mb-base">
+                            <div class="section-tit">고객정보</div>
+                            <!--underline-form-group-->
+                            <div class="underline-form-group">
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">회사명</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="회사명">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">담당자</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="담당자">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">입금자</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="입금자">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">연락처</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100 state-error" type="text" placeholder="연락처">
+                                    <p class="error-mes">연락처를 입력해 주세요.</p>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">이메일</label>
+                                    <input id="inp-sample" class="inp-base inp-underline w100 state-error" type="text" placeholder="이메일">
+                                    <p class="error-mes">이메일을 입력해 주세요.(이메일 형식에 맞지 않습니다.)</p>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="inp-sample" class="form-label">주소</label>
+                                    <div class="has-icon-input">
+                                        <input id="inp-sample2" class="inp-base inp-underline w100" type="text" placeholder="우편번호">
+                                        <button class="ui-btn btn-secondary btn-small"><span>우편번호</span></button>
+                                    </div>
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="주소">
+                                    <input id="inp-sample" class="inp-base inp-underline w100" type="text" placeholder="나머지 주소">
+                                    <p class="error-mes">우편번호를 검색해 주세요.</p>
+                                </div>
+                                <div class="form-group col">
+                                    <!--form-check-->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="inp-check" name="" id="check-sample2">
+                                        <label for="check-sample2"><span>세금 계산서 신청</span></label>
+                                    </div>
+                                    <!--// form-check-->
+                                </div>
+                            </div>
+                            <!--// underline-form-group-->
+                        </div>
+                        <div class="con-mb-large">
+                            <div class="section-tit">입금 계좌 안내</div>
+                            <div class="section-wrap full-fill split-large con-mb-thin">
+                                <div class="split">
+                                    <p class="keep-all">우리은행    000-000000-00-000<br>예금주 : ㈜망고스틴소프트</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button data-target="#popup2" class="ui-btn btn-primary btn-large w-180px popup-open"><span>주문하기</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문하기_입력 -->
+
+    <!-- layer popup : 주문하기 -->
+	<div class="dim-layer" id="popup2">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:500px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">주문하기</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--result-info-->
+                        <div class="result-info">
+                            <p class="result-tit">주문완료</p>
+                            <span class="result-sub-txt">주문이 완료 되었습니다.</span>
+                        </div>
+                        <!--// result-info-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <ul class="bul-round">
+                                <li>주문내역 및 진행사항은<br><span class="txt-point fn-medium">‘마이페이지 > 주문내역’</span> 에서 확인하실 수 있습니다.</li>
+                            </ul>
+                        </div>
+                        <!--// info-box-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w-180px"><span>주문내역 확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주문하기 -->
+
+    <script>
+        $(document).ready(function () {
+            $('input[type="radio"]').on('change', function () {
+                processSelect();
+            });
+
+            $('input[type="checkbox"]').on('change', function () {
+                processCheck();
+            });
+
+            $('input[type="text"]').on('keyup', function () {
+                processInputText();
+            });
+            
+            
+
+            function processSelect() {
+                var section1 = document.getElementsByName("section1");
+                var section2 = document.getElementsByName("section2");
+                var section3 = document.getElementsByName("section3");
+                var section5 = document.getElementsByName("section5");
+                var section6 = document.getElementsByName("section6");
+                var section7 = document.getElementsByName("section7");
+                var section8 = document.getElementsByName("section8");
+                
+                for (var i = 0; i < section1.length; i++) {
+                    if (section1[i].checked) {
+
+                        $("#choice1").addClass('insert-on');
+
+                        var checkId = section1[i].id
+                        var checkLb = 'input[name="section1"]:checked + label > span'
+                        var checkLbCon = document.querySelector(checkLb).innerText;
+                        document.getElementById("choice1").innerText ="";
+                        document.getElementById("choice1").append(checkLbCon + ',');
+
+                        break;
+                    } else {
+
+                    }
+                }
+
+                for (var i = 0; i < section2.length; i++) {
+                    if (section2[i].checked) {
+
+                        $("#choice2").addClass('insert-on');
+                        var radioId = section2[i].id
+                        var rasioNm = $("label[for='"+radioId+"']").find('span').text(); // 라벨값을 불러온다.
+                        document.getElementById("choice2").innerText ="";
+                        document.getElementById("choice2").append(rasioNm + ',');
+
+                        break;
+                    } else {
+
+                    }
+                }  
+                
+                for (var i = 0; i < section3.length; i++) {
+                    if (section3[i].checked) {
+                        
+                        $("#choice3").addClass('insert-on');
+                        var radioId = section3[i].id
+                        var rasioNm = $("label[for='"+radioId+"']").find('span').text(); // 라벨값을 불러온다.
+                        document.getElementById("choice3").innerText ="";
+                        document.getElementById("choice3").append(rasioNm + ',');
+                        document.getElementById("choice32").innerText ="";
+                        document.getElementById("choice32").append(rasioNm);
+
+                        break;
+
+                    } else {
+
+                    }
+                }
+                
+                for (var i = 0; i < section5.length; i++) {
+                    if (section5[i].checked) {
+
+                        $("#choice5").addClass('insert-on');
+                        var radioId = section5[i].id
+                        var rasioNm = $("label[for='"+radioId+"']").find('span').text(); // 라벨값을 불러온다.
+                        document.getElementById("choice5").innerText ="";
+                        document.getElementById("choice5").append(rasioNm + '장');
+                        document.getElementById("choice52").innerText ="";
+                        document.getElementById("choice52").append(rasioNm);
+                        
+                        break;
+
+                    } else {
+
+                    }
+                }
+                
+                for (var i = 0; i < section6.length; i++) {
+                    if (section6[i].checked) {
+
+                        $("#choice6").addClass('insert-on');
+                        var radioId = section6[i].id
+                        var rasioNm = $("label[for='"+radioId+"']").find('span').text(); // 라벨값을 불러온다.
+                        document.getElementById("choice6").innerText ="";
+                        document.getElementById("choice6").append(rasioNm + ',');
+
+                        break;
+
+                    } else {
+
+                    }
+                }
+
+                for (var i = 0; i < section7.length; i++) {
+                    if (section7[i].checked) {
+
+                        $("#choice7").addClass('insert-on');
+                        var radioId = section7[i].id
+                        var rasioNm = $("label[for='"+radioId+"']").find('span').text(); // 라벨값을 불러온다.
+                        document.getElementById("choice7").innerText ="";
+                        document.getElementById("choice7").append(rasioNm);
+
+                        break;
+                        
+                    } else {
+
+                    }
+                }
+
+
+                for (var i = 0; i < section8.length; i++) {
+                    if (section8[i].checked) {
+
+                        $("#choice8").addClass('insert-on');
+                        var radioId = section8[i].id
+                        var rasioNm = $("label[for='"+radioId+"']").find('span').text(); // 라벨값을 불러온다.
+                        document.getElementById("choice8").innerText ="";
+                        document.getElementById("choice8").append(rasioNm);
+
+                        break;
+
+                    } else {
+
+                    }
+                }
+                
+            
+            }
+
+            function processInputText(){
+                var inpText1 = document.getElementById('write1').value;
+                var inpText2 = document.getElementById('write2').value;
+                var inpText3 = document.getElementById('write3').value;
+                var inpText4 = document.getElementById('write4').value;
+
+                for (var i = 0; i < inpText1.length; i++) {
+                    $("#input1").addClass('insert-on');
+                    document.getElementById("input1").innerText = inpText1 + '명,';
+                }
+
+                for (var i = 0; i < inpText2.length; i++) {
+                    $("#input2").addClass('insert-on');
+                    document.getElementById("input2").innerText = inpText2;
+                }
+
+                for (var i = 0; i < inpText3.length; i++) {
+                    $("#input3").addClass('insert-on');
+                    document.getElementById("input3").innerText = inpText3;
+                }
+
+                for (var i = 0; i < inpText4.length; i++) {
+                    $("#input3").addClass('insert-on');
+                    document.getElementById("input3").innerText = inpText3 + ', ' + inpText4;
+                }
+
+
+
+            }
+
+            function processCheck(){
+                var checkBox1 = document.getElementsByName("check1");
+
+                for (var i = 0; i < checkBox1.length; i++) {
+                    if (checkBox1[i].checked) {
+
+                        $("#check1").addClass('insert-on');
+                        var checkId = checkBox1[i].id
+                        var checkLb = 'input[name="check1"]:checked + label > span'
+                        var checkedEls = document.querySelectorAll(checkLb);
+                        
+                        var result = '';
+                        checkedEls.forEach((el) => { 
+                            result += el.innerText + ', ';
+                        });
+                        
+                        document.getElementById('check1').innerText = result;
+
+                        //갯수
+                        var limit = $("input[name='check1']:checked").length >= 2;     
+                        $("input[name='check1']").not(":checked").attr("disabled",limit);
+                 
+                        break;
+                    } else {
+
+                    }                    
+                }
+
+            }
+
+
+        });
+    </script>
+</body>
+</html>

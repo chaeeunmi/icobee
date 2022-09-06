@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--sub-content-->
+            <div class="sub-content">
+                <button data-target="#login4" class="ui-btn btn-primary popup-open"><span>비밀번호 찾기</span></button>
+                <button data-target="#login5" class="ui-btn btn-primary popup-open"><span>비밀번호 찾기완료</span></button>
+            </div>
+            <!--// sub-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+    <!-- layer popup : 비밀번호찾기 -->
+	<div class="dim-layer" id="login4">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:420px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header no-tit"><!--팝업에 타이틀이 없는 경우 no-tit 클래스 추가-->
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--user-wrap-->
+                        <div class="user-wrap">
+                            <!--pop-con-tit-wrap-->
+                            <div class="pop-con-tit-wrap">
+                                <p class="pop-con-tit">비밀번호를 잊으셨나요?</p>
+                                <p class="pop-con-tit-desc">비밀번호 안내 받으실 이메일 주소를 입력해주세요.</p>
+                            </div>
+                            <!--pop-con-tit-wrap-->
+                            <!--user-con-->
+                            <div class="user-con">
+                                <div class="form-group col">
+                                    <input type="text" class="inp-base inp-large w100" placeholder="이메일을 입력해 주세요.">
+                                </div>
+                                <div class="btn-group col txt-c">
+                                    <button data-target="#login5" class="ui-btn btn-primary btn-large w100 popup-open"><span>비밀번호 찾기</span></button>
+                                </div>
+                            </div>
+                            <!--// user-con-->
+                        </div>
+                        <!--// user-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 비밀번호찾기 -->
+
+    <!-- layer popup : 비밀번호찾기 완료 -->
+	<div class="dim-layer" id="login5">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:420px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header no-tit"><!--팝업에 타이틀이 없는 경우 no-tit 클래스 추가-->
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--user-wrap-->
+                        <div class="user-wrap">
+                            <!--pop-con-tit-wrap-->
+                            <div class="pop-con-tit-wrap">
+                                <p class="pop-con-tit-desc">입력하신 <span class="txt-point fn-w500">icobee@gmail.com</span>으로 <br class="mo-hide">임시비밀번호를 발송해 드렸습니다.<br>확인 후 로그인 해 주세요.</p>
+                            </div>
+                            <!--pop-con-tit-wrap-->
+                            <!--user-con-->
+                            <div class="user-con">
+                                <div class="btn-group col txt-c">
+                                    <button class="ui-btn btn-primary btn-large w100"><span>확인</span></button>
+                                </div>
+                            </div>
+                            <!--// user-con-->
+                        </div>
+                        <!--// user-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 비밀번호찾기 완료 -->
+
+    <script>
+        $(document).ready(function(){
+            layerPopup('#login4');//팝업열기
+            //layerPopupClose('#login4');//팝업닫기
+            
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--sub-content-->
+            <div class="sub-content">
+                <!--mypage-main-->
+                <div class="mypage-main">
+                    <!--my-link-text-->
+                    <div class="my-link-text">
+                        <div class="my-group">
+                            <span class="my-name">사용자</span>님, 환영합니다.<br>
+                            <a href="mypage_sub1.html" class="my-link">회원정보</a>를 업데이트 해주세요.
+                        </div>
+                        <div class="my-group">
+                            최근 1개월간 0건 주문하셨고,<br>
+                            자세한 내용은 <a href="mypage_sub2.html" class="my-link">주문내역</a>에서 확인하실 수 있습니다.
+                        </div>
+                        <div class="my-group">
+                            최근 문의 주셨던 1건의 <a href="mypage_sub3.html" class="my-link">문의</a>는<br>
+                            현재 접수되었습니다.
+                        </div>
+                        <div class="my-group">
+                            정보보호를 위해 3개월에 한번<br>
+                            <a href="#" class="my-link">비밀번호 변경</a>을 해주세요.
+                        </div>
+                    </div>
+                    <!--// my-link-text-->
+                </div>
+                <!--// mypage-main-->
+                
+            </div>
+            <!--// sub-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
+</body>
+</html>

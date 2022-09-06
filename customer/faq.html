@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-sub.css"><!--서브페이지-->
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--sub-content-->
+            <div class="sub-content">
+                <!--sub-tit-wrap-->
+                <div class="sub-tit-wrap">
+                    <p class="sub-tit">고객지원</p>
+                </div>
+                <!--// sub-tit-wrap-->
+                <!--sub-tit-tab-->
+                <div class="sub-tit-tab">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1">공지사항</li>
+                        <li class="tab-link current" data-tab="tab-2">FAQ</li>
+                        <li class="tab-link" data-tab="tab-3">1:1 문의</li>
+                    </ul>
+                    <div id="tab-1" class="tab-content">
+                        111
+                    </div>
+                    <div id="tab-2" class="tab-content current">
+                        <!--bee-shc-box-->
+                        <div class="bee-shc-box">
+                            <!--bee-shc-form-->
+                            <div class="bee-shc-form">
+                                <!--ui-select-->
+                                <div class="ui-select select-large">
+                                    <div class="select">
+                                        <span>전체</span>
+                                        <i class="mdi mdi-chevron-down"></i>
+                                    </div>
+                                    <input type="hidden" name="selection">
+                                    <ul class="ui-select-menu">
+                                        <li id="selctID1">회원</li>
+                                        <li id="selctID2">주문/결재</li>
+                                        <li id="selctID3">사이트이용</li>
+                                        <li id="selctID4">기타</li>
+                                    </ul>
+                                </div>
+                                <!--// ui-select-->
+                                <!--shc-inp-->
+                                <div class="shc-inp">
+                                    <!--has-icon-input-->
+                                    <div class="has-icon-input">
+                                        <input type="text" name="" id="" class="inp-base inp-large" placeholder="검색어를 입력해 주세요.">
+                                        <button class="ui-btn"><i class="ri-search-line"></i><span class="blind">검색</span></button>
+                                    </div>
+                                    <!--// has-icon-input-->
+                                </div>
+                                <!--// shc-inp-->
+                            </div>
+                            <!--// bee-shc-form-->
+                            <!--often-word-->
+                            <div class="often-word">
+                                <p class="often-tit">자주찾는 단어</p>
+                                <ul>
+                                    <li><a href="#">사업자 가입</a></li>
+                                    <li><a href="#">서비스</a></li>
+                                    <li><a href="#">결재</a></li>
+                                    <li><a href="#">주문</a></li>
+                                    <li><a href="#">회원탈퇴</a></li>
+                                </ul>
+                            </div>
+                            <!--// often-word-->
+                        </div>
+                        <!--// bee-shc-box-->
+                        <!--text-tab-wrap-->
+                        <div class="text-tab-wrap">
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="faq-tab1">회원</li>
+                                <li class="tab-link" data-tab="faq-tab2">주문/결제</li>
+                                <li class="tab-link" data-tab="faq-tab3">사이트이용</li>
+                                <li class="tab-link" data-tab="faq-tab4">기타</li>
+                            </ul>
+                            <div id="faq-tab1" class="tab-content current">
+                                <!--accordion-section-->
+                                <div class="accordion-section faq-accordion">
+                                    <!--accordion-body-->
+                                    <div class="accordion-body">
+                                        <div class="accordion-label label-click-open">
+                                            <div class="accord-tit">
+                                                <div class="tit-split">
+                                                    <span class="bul">Q</span>
+                                                    <div class="txt-wrap">
+                                                        <span class="txt">회원탈퇴는 어디서 해야 되나요?</span>
+                                                        <span class="date">2021.12.14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="accord-icon"></span>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div class="con-split">
+                                                <span class="bul">A</span>
+                                                <div class="txt">
+                                                    안녕하세요.<br>
+                                                    회원탈퇴에 대해 안내 드립니다.<br><br>
+                                                    저희 사이트 회원 탈퇴는 마이페이지 > 정보수정 하단에 보시면 ‘회원탈퇴’ 메뉴가 있습니다.<br>
+                                                    감사합니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// accordion-body-->
+                                    <!--accordion-body-->
+                                    <div class="accordion-body">
+                                        <div class="accordion-label label-click-open">
+                                            <div class="accord-tit">
+                                                <div class="tit-split">
+                                                    <span class="bul">Q</span>
+                                                    <div class="txt-wrap">
+                                                        <span class="txt">회원탈퇴는 어디서 해야 되나요?</span>
+                                                        <span class="date">2021.12.14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="accord-icon"></span>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div class="con-split">
+                                                <span class="bul">A</span>
+                                                <div class="txt">
+                                                    안녕하세요.<br>
+                                                    회원탈퇴에 대해 안내 드립니다.<br><br>
+                                                    저희 사이트 회원 탈퇴는 마이페이지 > 정보수정 하단에 보시면 ‘회원탈퇴’ 메뉴가 있습니다.<br>
+                                                    감사합니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// accordion-body-->
+                                    <!--accordion-body-->
+                                    <div class="accordion-body">
+                                        <div class="accordion-label label-click-open">
+                                            <div class="accord-tit">
+                                                <div class="tit-split">
+                                                    <span class="bul">Q</span>
+                                                    <div class="txt-wrap">
+                                                        <span class="txt">회원탈퇴는 어디서 해야 되나요?</span>
+                                                        <span class="date">2021.12.14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="accord-icon"></span>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div class="con-split">
+                                                <span class="bul">A</span>
+                                                <div class="txt">
+                                                    안녕하세요.<br>
+                                                    회원탈퇴에 대해 안내 드립니다.<br><br>
+                                                    저희 사이트 회원 탈퇴는 마이페이지 > 정보수정 하단에 보시면 ‘회원탈퇴’ 메뉴가 있습니다.<br>
+                                                    감사합니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// accordion-body-->
+                                    <!--accordion-body-->
+                                    <div class="accordion-body">
+                                        <div class="accordion-label label-click-open">
+                                            <div class="accord-tit">
+                                                <div class="tit-split">
+                                                    <span class="bul">Q</span>
+                                                    <div class="txt-wrap">
+                                                        <span class="txt">회원탈퇴는 어디서 해야 되나요?</span>
+                                                        <span class="date">2021.12.14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="accord-icon"></span>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div class="con-split">
+                                                <span class="bul">A</span>
+                                                <div class="txt">
+                                                    안녕하세요.<br>
+                                                    회원탈퇴에 대해 안내 드립니다.<br><br>
+                                                    저희 사이트 회원 탈퇴는 마이페이지 > 정보수정 하단에 보시면 ‘회원탈퇴’ 메뉴가 있습니다.<br>
+                                                    감사합니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// accordion-body-->
+                                </div>
+                                <!--// accordion-section-->
+                                <!--paging-wrap-->
+                                <div class="paging-wrap">
+                                    <ul>
+                                        <li class="go-first"><button class="only-icon-btn" disabled><i class="mdi mdi-page-first"></i><span class="blind">처음으로</span></button></li>
+                                        <li class="go-prev"><button class="only-icon-btn" disabled><i class="mdi mdi-chevron-left"></i><span class="blind">이전으로</span></button></li>
+                                        <li class="page-on"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                        <li class="go-next"><button class="only-icon-btn"><i class="mdi mdi-chevron-right"></i><span class="blind">다음으로</span></button></li>
+                                        <li class="go-last"><button class="only-icon-btn"><i class="mdi mdi-page-last"></i><span class="blind">마지막으로</span></button></li>
+                                    </ul>
+                                </div>
+                                <!--paging-wrap-->
+                            </div>
+                            <div id="faq-tab2" class="tab-content">
+                                222
+                            </div>
+                            <div id="faq-tab3" class="tab-content">
+                                333
+                            </div>
+                            <div id="faq-tab4" class="tab-content">
+                                444
+                            </div>
+                        </div>
+                        <!--// text-tab-wrap-->
+                    </div>
+                    <div id="tab-3" class="tab-content">
+                        333
+                    </div>
+                </div>
+                <!--// sub-tit-tab-->
+
+            </div>
+            <!--// sub-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
+</body>
+</html>

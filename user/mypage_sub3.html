@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--full-content-->
+            <div class="full-content">
+                <!--side-con-wrap-->
+                <div class="side-con-wrap">
+                    <!--my-link-text-->
+                    <div class="my-link-text">
+                        <div class="my-group">
+                            <span class="my-name">사용자</span>님, 환영합니다.<br>
+                            <a href="mypage_sub1.html" class="my-link">회원정보</a>를 업데이트 해주세요.
+                        </div>
+                        <div class="my-group">
+                            최근 1개월간 0건 주문하셨고,<br>
+                            자세한 내용은 <a href="mypage_sub2.html" class="my-link">주문내역</a>에서 확인하실 수 있습니다.
+                        </div>
+                        <div class="my-group">
+                            최근 문의 주셨던 1건의 <a href="mypage_sub3.html" class="my-link page-on">문의</a>는<br>
+                            현재 접수되었습니다.
+                        </div>
+                        <div class="my-group">
+                            정보보호를 위해 3개월에 한번<br>
+                            <a href="#" class="my-link">비밀번호 변경</a>을 해주세요.
+                        </div>
+                    </div>
+                    <!--// my-link-text-->
+                </div>
+                <!--// side-con-wrap-->
+                <!--con-wrap-->
+                <div class="con-wrap">
+                    <!--mo-page-tab-->
+                    <ul class="mo-page-tab">
+                        <li><a href="mypage_sub1.html">회원정보</a></li>
+                        <li><a href="mypage_sub2.html">주문내역</a></li>
+                        <li class="page-on"><a href="mypage_sub3.html">문의</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                    </ul>
+                    <!--mo-page-tab-->
+                    <!--sub-tit-wrap-->
+                    <div class="sub-tit-wrap">
+                        <p class="sub-tit">문의내역</p>
+                    </div>
+                    <!--// sub-tit-wrap-->
+                    <!--search-box-->
+                    <div class="search-box">
+                        <div class="form-group row">
+                            <!--ui-select-->
+                            <div class="ui-select">
+                                <div class="select">
+                                    <span>전체</span>
+                                    <i class="mdi mdi-chevron-down"></i>
+                                </div>
+                                <input type="hidden" name="selection">
+                                <ul class="ui-select-menu">
+                                    <li id="selctID1">제목</li>
+                                    <li id="selctID2">내용</li>
+                                </ul>
+                            </div>
+                            <!--// ui-select-->
+                            <!--shc-inp-->
+                            <div class="shc-inp">
+                                <!--has-icon-input-->
+                                <div class="has-icon-input">
+                                    <input type="text" name="" id="" class="inp-base" placeholder="검색어를 입력해 주세요.">
+                                    <button class="ui-btn"><i class="ri-search-line fn-size24"></i><span class="blind">검색</span></button>
+                                </div>
+                                <!--// has-icon-input-->
+                            </div>
+                            <!--// shc-inp-->
+                        </div>
+                    </div>
+                    <!--// search-box-->
+                    <!--tbl-has-paging-->
+                    <div class="tbl-has-paging">
+                        <!--tbl-wrap-->
+                        <div class="tbl-wrap tbl-resposive">
+                            <!--tbl-base-->
+                            <table class="tbl-base td-align-center">
+                                <colgroup>
+                                    <col style="width:100px;">
+                                    <col>
+                                    <col style="width:120px;">
+                                    <col style="width:120px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">작성일</th>
+                                        <th scope="col">진행사항</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mo-hide">4</td>
+                                        <td class="txt-l"><a href="#">문의 드립니다.</a></td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>접수</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mo-hide">3</td>
+                                        <td class="txt-l"><a href="#">문의 드립니다.</a></td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>접수</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mo-hide">2</td>
+                                        <td class="txt-l"><a href="#">문의 드립니다.</a></td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>답변완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mo-hide">1</td>
+                                        <td class="txt-l"><a href="#">문의 드립니다.</a></td>
+                                        <td class="respon-grey">2022-01-10</td>
+                                        <td>답변완료</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--// tbl-base-->
+                        </div>
+                        <!--// tbl-wrap-->
+                        <!--tbl-state-->
+                        <div class="tbl-state">
+                            <p class="now-page"><span>1</span>/10</p>
+                        </div>
+                        <!--// tbl-state-->
+                        <!--paging-wrap-->
+                        <div class="paging-wrap">
+                            <ul>
+                                <li class="go-first"><button class="only-icon-btn" disabled><i class="mdi mdi-page-first"></i><span class="blind">처음으로</span></button></li>
+                                <li class="go-prev"><button class="only-icon-btn" disabled><i class="mdi mdi-chevron-left"></i><span class="blind">이전으로</span></button></li>
+                                <li class="page-on"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li class="go-next"><button class="only-icon-btn"><i class="mdi mdi-chevron-right"></i><span class="blind">다음으로</span></button></li>
+                                <li class="go-last"><button class="only-icon-btn"><i class="mdi mdi-page-last"></i><span class="blind">마지막으로</span></button></li>
+                            </ul>
+                        </div>
+                        <!--paging-wrap-->
+                    </div>
+                    <!--// tbl-has-paging-->
+
+                </div>
+                <!--// con-wrap-->
+            </div>
+            <!--// full-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
+</body>
+</html>

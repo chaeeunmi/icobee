@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-process.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--process-wrap-->
+            <div class="process-wrap process2">
+                <!--process-con-->
+                <div class="process-con">
+                    <!--process-inner-->
+                    <div class="process-inner">
+                        <!--step-tit-wrap-->
+                        <div class="step-tit-wrap">
+                            <div class="step-tit has-paint"><span class="txt-point2">아이코비 창업패키지</span> 요금제를 추천해드립니다</div>
+                        </div>
+                        <!--// step-tit-wrap-->
+
+                        <!--tbl-wrap-->
+                        <div class="tbl-wrap fee-tbl-wrap">
+                            <!--tbl-base-->
+                            <table id="pricing-table" class="tbl-base tr-table">
+                                <caption>아이코비 요금제에 대한 테이블</caption>
+                                <thead>
+                                    <tr>
+                                        <th data-mobile-collapse>
+                                            <div class="th-bg-bee"><img src="../resource/img/process/main3_bee.png" alt="코비"></div>
+                                            <div class="th-bg-bee2"><img src="../resource/img/process/main3_bg.png" alt="미니벌"></div>
+                                        </th>
+                                        <th data-mobile-content="창업패키지 1" class="recomm"><p class="fee-name">창업패키지 1</p><p class="fee-con">000,000 <span>원</span></p></th>
+                                        <th data-mobile-content="창업패키지 2" data-featured><p class="fee-name">창업패키지 2</p><p class="fee-con">000,000 <span>원</span></p></th>
+                                        <th data-mobile-content="창업패키지 3"><p class="fee-name">창업패키지 3</p><p class="fee-con">000,000 <span>원</span></p></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th><span class="fee-item">반응형 홈페이지</span></th>
+                                        <td class="recomm">5 페이지</td>
+                                        <td>10 페이지</td>
+                                        <td>15 페이지</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="fee-item">방문미팅</span></th>
+                                        <td class="recomm">1회</td>
+                                        <td>2회</td>
+                                        <td>3회</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="fee-item">추가 선택</span>
+                                            <!--has-tooltip-->
+                                            <div class="has-tooltip">
+                                                <span class="tooltip-shape"><i class="mdi mdi-help"></i></span>
+                                                <div class="tooltip-con">
+                                                    <button class="tooltip-close"><i class="mdi mdi-close"><span class="blind">닫기</span></i></button>
+                                                    <!--내용-->
+                                                    <strong>[추가선택 사항]</strong><br>
+                                                    로고, 명함, 소봉투, 중봉투, 대봉투, 리플렛, 카다로그, 전단지, 현판, 회사소개, 모바일홈페이지, 호스팅, 마이크로사이트, 랜딩페이지, 도메인
+                                                    <!--// 내용-->
+                                                </div>
+                                            </div>
+                                            <!--// has-tooltip-->
+                                        </th>
+                                        <td class="recomm">1개</td>
+                                        <td>2개</td>
+                                        <td>3개</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="fee-item">1년 유지관리</span></th>
+                                        <td class="recomm"><i class="mdi mdi-check"></i></td>
+                                        <td><i class="mdi mdi-check"></i></td>
+                                        <td><i class="mdi mdi-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="fee-item">템플릿 선택</span></th>
+                                        <td class="recomm"><i class="mdi mdi-check"></i></td>
+                                        <td><i class="mdi mdi-check"></i></td>
+                                        <td><i class="mdi mdi-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="fee-item">로고</span></th>
+                                        <td class="recomm"><i class="mdi mdi-check"></i></td>
+                                        <td><i class="mdi mdi-check"></i></td>
+                                        <td><i class="mdi mdi-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th data-mobile-collapse></th>
+                                        <td data-mobile-expand class="recomm"><button class="ui-btn btn-secondary btn-large" onclick="location.href='process3.html'"><span>선택</span></button></td>
+                                        <td data-mobile-expand><button class="ui-btn btn-secondary btn-large" onclick="location.href='process3.html'"><span>선택</span></button></td>
+                                        <td data-mobile-expand><button class="ui-btn btn-secondary btn-large" onclick="location.href='process3.html'"><span>선택</span></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--// tbl-base-->
+                            <div class="th-bg-bee3"><img src="../resource/img/process/main3_bg2.png" alt="미니벌"></div>
+                        </div>
+                        <!--// tbl-wrap-->
+                    </div>
+                    <!--// process-inner-->
+                </div>
+                <!--// process-con-->
+                <!--process-bottom-->
+                <div class="process-bottom">
+                    <div class="step-prev"><button class="ui-btn btn-secondary2 btn-xlarge" onclick="location.href='process.html'"><span>이전</span></button></div>
+                </div>
+                <!--// process-bottom-->
+            </div>
+            <!--// process-wrap-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <script src="../resource/js/responsive-tbl.js"></script><!--요금제 테이블관련 JS-->
+</body>
+</html>

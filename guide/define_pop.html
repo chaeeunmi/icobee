@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+	<script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+    
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--html-guide-->
+        <div class="html-guide">
+            <div class="html-guide-desc">
+                <h1>약관 팝업 목록</h1>
+                <p>버튼 모양은 화면 디자인에 있는 클래스로 사용해주세요.</p>
+                <div class="guide-desc">
+                    <p class="fn-w600">팝업 버튼 공통</p>
+                    <p>data-target="#popupID", class="popup-open"</p><br>
+                    <p class="fn-w600">버튼 클릭없이 팝업호출</p>
+                    <p>layerPopup('#popupID'); //팝업열기</p>
+                    <p>layerPopupClose('#popupID'); //팝업닫기</p>
+                </div>
+            </div>
+            <button data-target="#popup1" class="ui-btn btn-primary popup-open"><span>이용약관</span></button>
+			<button data-target="#popup2" class="ui-btn btn-primary popup-open"><span>개인정보보호정책</span></button>
+        </div>
+        <!--// html-guide-->
+    </div>
+    <!--// base-wrap-->
+    
+
+    <!-- layer popup : 이용약관 -->
+	<div class="dim-layer" id="popup1">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="width:640px;"><!--넓이지정-->
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">이용약관</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+						<!--border-box-->
+                        <div class="border-box">
+							<!--util-defi-->
+							<div class="util-defi">
+								<h3 id="list01">제1조 (목적)</h3>
+								<ul class="bul-round">
+									<li>본 약관은 ㈜망고스틴소프트 (이하 '회사')가 아이코비스튜디오 사이트(이하 ‘사이트’)를 통하여 인터넷상에서 제공하는 서비스(이하 ‘서비스’)를 이용하는 고객 (이하 '고객')간의 권리와 의무 및 책임 등 기타 제반사항을 규정함을 목적으로 합니다.</li>
+								</ul>
+								<h3 id="list01">제2조 (용어의 정의)</h3>
+								<ul class="bul-round">
+									<li>이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</li>
+									<li>
+										<dl class="direct-row">
+											<dt>가.</dt>
+											<dd>'회원'이라 함은 이 약관에 동의하고 회원가입을 통하여 이용자ID(고유번호)와 비밀번호를 발급받은 자로서, 회사가 제공하는 서비스를 이용할 수 있는 이용자를 말합니다.</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="direct-row">
+											<dt>나.</dt>
+											<dd>'이용자ID'라 함은 회원의 식별 및 서비스 이용을 위하여 회원의 신청에 따라 회사가 회원 별로 부여하는 고유한 문자와 숫자의 조합을 말합니다.</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="direct-row">
+											<dt>다.</dt>
+											<dd>'비밀번호'라 함은 이용자ID로 식별되는 회원의 본인 여부를 검증하기 위하여 회원이 설정하여 회사에 등록한 고유의 문자와 숫자의 조합을 말합니다.</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="direct-row">
+											<dt>라.</dt>
+											<dd>‘로그인’이라 함은 이용자ID와 비밀번호를 통하여 서비스 신청 및 사용 중 서비스의 세부정보를 확인할 수 있는 행위를 말합니다.</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="direct-row">
+											<dt>마.</dt>
+											<dd>'탈퇴'라 함은 회원이 서비스 이용을 해지하는 것을 말합니다.</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="direct-row">
+											<dt>바.</dt>
+											<dd>‘휴면ID’ 라 함은 회사에서 정한 일정 기간 동안 사이트 접속 및 미 로그인 시 고객의 정보 악용방지를 위하여 보호되는 계정입니다. 이 약관에서 사용하는 용어 중 제1항에서 정하지 아니한 것은 관계 법령 및 서비스 별 안내에서 정하는 바에 따르며, 그 외에는 일반 관례에 따릅니다.</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<!--// util-defi-->
+						</div>
+						<!--// border-box-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 이용약관 -->
+
+	<!-- layer popup : 개인정보보호정책 -->
+	<div class="dim-layer" id="popup2">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="width:640px;"><!--넓이지정-->
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">개인정보보호정책</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--border-box-->
+                        <div class="border-box">
+							<!--util-defi-->
+							<div class="util-defi">
+								<dl class="direct-row">
+									<dt>시행일자 : 2016년 12월 22일</dt>
+								</dl>
+								<dl>
+									<dt>개인정보 처리방침</dt>
+									<dd>
+										(주)망고스틴소프트 (이하 ‘회사’)는 다음과 같은 원칙에 의하여 이용자의 개인정보를 수집, 이용 및 관리하고 있고, 이와 관련하여 정보통신서비스 제공자가 준수하여야 하는 대한민국의 관계법령 및 개인정보보호 규정, 가이드라인을 준수하고 있습니다.
+										회사는 개인정보 처리방침을 통하여, 이용자의 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 회사가 어떠한 조치를 취하는지 알려드립니다. 회사의 개인정보 처리방침은 다음과 같은 내용을 담고 있습니다
+									</dd>
+								</dl>
+								<ul class="defi-index">
+									<li><a href="#list2-01" class="hover-underline">1. 개인정보의 수집 및 이용 목적</a></li>
+									<li><a href="#list2-02" class="hover-underline">2. 수집하는 개인정보 항목 및 방법</a></li>
+									<li><a href="#list2-03" class="hover-underline">3. 개인정보 보유ㆍ이용기간 및 파기절차 및 방법</a></li>
+									<li><a href="#" class="hover-underline">4. 개인정보의 제공</a></li>
+									<li><a href="#" class="hover-underline">5. 개인정보의 처리위탁</a></li>
+									<li><a href="#" class="hover-underline">6. 이용자 및 법정대리인의 권리와 그 행사방법</a></li>
+									<li><a href="#" class="hover-underline">7. 개인정보 자동수집 장치의 설치ㆍ운영 및 그 거부에 관한 사항</a></li>
+									<li><a href="#" class="hover-underline">8. 개인정보의 기술적/관리적 보호대책</a></li>
+									<li><a href="#" class="hover-underline">9. 개인정보 전담조직 운영</a></li>
+									<li><a href="#" class="hover-underline">10. 기타 개인정보 처리에 관한 방침</a></li>
+									<li><a href="#" class="hover-underline">11. 고지의무</a></li>
+								</ul>
+								<h3 id="list2-01">1. 개인정보의 수집 및 이용 목적</h3>
+								<ul class="bul-round">
+									<li>회사는 다음의 목적을 위하여 개인정보를 수집 및 이용합니다.</li>
+									<li>
+										<dl>
+											<dt>가. 회원관리</dt>
+											<dd>이용자 식별 및 본인확인, 가입의사 확인, 불량회원 부정이용 방지, 만 14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인, 불만처리 등 민원처리, 공지사항 전달, 회원탈퇴 의사확인, 법정대리인 권리행사 시 본인확인</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>나. 서비스 이용 및 이용에 따른 요금정산</dt>
+											<dd>콘텐츠 제공, 구매 및 요금결제, 물품배송 또는 청구서 발송, 요금추심</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>다. 마케팅 및 광고활용</dt>
+											<dd>신규 서비스 개발 및 특화, 이벤트 등 광고성 정보전달, 인구통계학적 특성에 따른 서비스 제공 및 광고게재, 접속 빈도파악 또는 회원의 서비스 이용 통계</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>라. 기타</dt>
+											<dd>서비스 유효성 확인, 원활한 양질의 서비스 및 교육 콘텐츠 제공</dd>
+										</dl>
+									</li>
+								</ul>
+								<h3 id="list2-02">2. 수집하는 개인정보 항목 및 방법</h3>
+								<ul class="bul-round">
+									<li>회사는 다음의 목적을 위하여 개인정보를 수집 및 이용합니다.</li>
+									<li>
+										<dl>
+											<dt>가. 회원관리</dt>
+											<dd>이용자 식별 및 본인확인, 가입의사 확인, 불량회원 부정이용 방지, 만 14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인, 불만처리 등 민원처리, 공지사항 전달, 회원탈퇴 의사확인, 법정대리인 권리행사 시 본인확인</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>나. 서비스 이용 및 이용에 따른 요금정산</dt>
+											<dd>콘텐츠 제공, 구매 및 요금결제, 물품배송 또는 청구서 발송, 요금추심</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>다. 마케팅 및 광고활용</dt>
+											<dd>신규 서비스 개발 및 특화, 이벤트 등 광고성 정보전달, 인구통계학적 특성에 따른 서비스 제공 및 광고게재, 접속 빈도파악 또는 회원의 서비스 이용 통계</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>라. 기타</dt>
+											<dd>서비스 유효성 확인, 원활한 양질의 서비스 및 교육 콘텐츠 제공</dd>
+										</dl>
+									</li>
+								</ul>
+								<h3 id="list2-03">3. 개인정보 보유ㆍ이용기간 및 파기절차 및 방법</h3>
+								<ul class="bul-round">
+									<li>회사는 다음의 목적을 위하여 개인정보를 수집 및 이용합니다.</li>
+									<li>
+										<dl>
+											<dt>가. 회원관리</dt>
+											<dd>이용자 식별 및 본인확인, 가입의사 확인, 불량회원 부정이용 방지, 만 14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인, 불만처리 등 민원처리, 공지사항 전달, 회원탈퇴 의사확인, 법정대리인 권리행사 시 본인확인</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>나. 서비스 이용 및 이용에 따른 요금정산</dt>
+											<dd>콘텐츠 제공, 구매 및 요금결제, 물품배송 또는 청구서 발송, 요금추심</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>다. 마케팅 및 광고활용</dt>
+											<dd>신규 서비스 개발 및 특화, 이벤트 등 광고성 정보전달, 인구통계학적 특성에 따른 서비스 제공 및 광고게재, 접속 빈도파악 또는 회원의 서비스 이용 통계</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>라. 기타</dt>
+											<dd>서비스 유효성 확인, 원활한 양질의 서비스 및 교육 콘텐츠 제공</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							<!--// util-defi-->
+						</div>
+						<!--// border-box-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 개인정보보호정책 -->
+
+    
+</body>
+</html>

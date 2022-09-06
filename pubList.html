@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오 퍼블리싱 목록</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="resource/css/ui-base.css"><!--공통-->
+    <style type="text/css">
+            /*Just pubList*/
+        .pub-list-wrap{width:100%; min-width:1280px; position:relative; padding:40px;}
+        .pub-list-wrap .tit{font-size:24px; font-weight:600; margin-bottom:30px;}
+        .pub-list-wrap .tit .desc{font-size:14px; line-height:1.5; display:block; color:#777; font-weight:400; margin-top:15px;}
+        .pub-list-wrap table{border-collapse:collapse; table-layout:fixed;}
+        .pub-list-wrap table *, .pub-list-wrap table th, .pub-list-wrap table td{font-size:13px; font-weight:400;}
+        .pub-list-wrap table th{padding:5px 5px; text-align:center; background:#f1f1f1; height:30px; font-weight:500; border-top:1px solid #cccccc; border-left:1px solid #cccccc; border-right:1px solid #cccccc;}
+        .pub-list-wrap table td{padding:5px 10px; border:1px solid #cccccc;}
+        .pub-list-wrap table td > a{text-decoration:underline; color:#1b76ff;}
+
+        .pub-list-wrap .tab-wrap {width:100%; position:relative;}
+        .pub-list-wrap .tab-list {box-sizing: border-box; -webkit-box-sizing: border-box;}
+        .pub-list-wrap .tab-list:after{content: ""; clear: both; display: table;}
+        .pub-list-wrap .tab-list li {float: left; border: 1px solid #cccccc;margin-left: -1px;}
+        .pub-list-wrap .tab-list li a {display: block; height: 40px; line-height: 40px; text-decoration: none;}
+        .pub-list-wrap .tab-list li a span {display: block; height: 40px; line-height: 40px; padding: 0 40px; color: #000000;}
+        .pub-list-wrap .tab-list li.active span {color: #fff; background-color: #1E72E9;}
+        .pub-list-wrap .tab-item {display: none; margin-top: 20px;}
+        .pub-list-wrap .tab-item.active{display: block;}
+    </style>
+    <script src="resource/js/jquery-latest.min.js"></script>
+    <script>
+        // Just pubList
+        $(document).on('click', '.tab-list li a', function() {
+            var $this = $(this),
+                $tabList = $this.parents('ul'),
+                _idx = $this.closest('li').index();
+            
+            $tabList.children().eq(_idx).addClass('active').siblings().removeClass('active');
+            $tabList.next().children().eq(_idx).addClass('active').siblings().removeClass('active');
+        });
+
+    </script>
+
+    
+</head>
+<body>
+    <!--pub-list-wrap-->
+	<div class="pub-list-wrap">
+		<p class="tit">아이코비 스튜디오 퍼블리싱 리스트<span class="desc">퍼블리싱 화면 확인을 위한 HTML 목록입니다.</span></p>
+		<!--tab-wrap-->
+		<div class="tab-wrap">
+			<!--tab-list-->
+			<ul class="tab-list">
+				<li class="active"><a href="javascript:;"><span>공통</span></a></li>
+				<li><a href="javascript:;"><span>프로세스</span></a></li>
+				<li><a href="javascript:;"><span>사용자</span></a></li>
+				<li><a href="javascript:;"><span>고객지원</span></a></li>
+				<li><a href="javascript:;"><span>견적문의</span></a></li>
+			</ul>
+			<!--// tab-list-->
+			<!--tab-items-->
+			<div class="tab-items">
+				<!--tab-item-->
+				<div class="tab-item active">
+					<table>
+						<caption>전체 탭 목록 테이블</caption>
+						<colgroup>
+							<col style="width:200px;">
+							<col>
+							<col>
+							<col style="width:450px;">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1Depth</th>
+								<th>2Depth</th>
+								<th>3Depth</th>
+								<th>경로</th>
+								<th>완료일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>메인</td>
+								<td></td>
+								<td></td>
+								<td><a href="main.html" target="_blank">main.html</a></td>
+								<td class="txt-c">2022-02-07</td>
+							</tr>
+							<tr>
+								<td rowspan="5">공통</td>
+								<td>사이트맵</td>
+								<td></td>
+								<td><a href="guide/sitemap.html" target="_blank">guide/sitemap.html</a></td>
+								<td class="txt-c">2022-02-21</td>
+							</tr>
+							<tr>
+								<td>알림</td>
+								<td></td>
+								<td><a href="guide/alarm.html" target="_blank">guide/alarm.html</a></td>
+								<td class="txt-c">2022-02-21</td>
+							</tr>
+							<tr>
+								<td class="txt-red">레이어 팝업 가이드 [필독]</td>
+								<td></td>
+								<td><a href="guide/popup.html" target="_blank">guide/popup.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+							<tr>
+								<td>약관 팝업목록</td>
+								<td></td>
+								<td><a href="guide/define_pop.html" target="_blank">guide/define_pop.html</a></td>
+								<td class="txt-c">2022-03-16</td>
+							</tr>
+							<tr>
+								<td>장바구니</td>
+								<td></td>
+								<td><a href="guide/cart.html" target="_blank">guide/cart.html</a></td>
+								<td class="txt-c">2022-03-16</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// tab-item-->
+				<!--tab-item-->
+				<div class="tab-item">
+					<table>
+						<caption>프로세스 탭 목록 테이블</caption>
+						<colgroup>
+							<col style="width:200px;">
+							<col>
+							<col>
+							<col style="width:450px;">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1Depth</th>
+								<th>2Depth</th>
+								<th>3Depth</th>
+								<th>경로</th>
+								<th>완료일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="4">프로세스</td>
+								<td>'브랜드' 선택 시</td>
+								<td></td>
+								<td><a href="process/process.html" target="_blank">process/process.html</a></td>
+								<td class="txt-c">2022-02-07</td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td></td>
+								<td><a href="process/process2.html" target="_blank">process/process2.html</a></td>
+								<td class="txt-c">2022-02-07</td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td></td>
+								<td><a href="process/process3.html" target="_blank">process/process3.html</a></td>
+								<td class="txt-c">2022-02-07</td>
+							</tr>
+							<tr>
+								<td>프로세스 팝업목록</td>
+								<td></td>
+								<td><a href="process/process_pop.html" target="_blank">process/process_pop.html</a></td>
+								<td class="txt-c">2022-03-10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// tab-item-->
+				<!--tab-item-->
+				<div class="tab-item">
+					<table>
+						<caption>사용자 탭 목록 테이블</caption>
+						<colgroup>
+							<col style="width:200px;">
+							<col>
+							<col>
+							<col style="width:450px;">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1Depth</th>
+								<th>2Depth</th>
+								<th>3Depth</th>
+								<th>경로</th>
+								<th>완료일</th>
+							</tr>
+						</thead>
+						<tbody>
+                            <tr>
+								<td rowspan="4">로그인</td>
+								<td>이메일 입력</td>
+								<td></td>
+								<td><a href="user/login1.html" target="_blank">user/login1.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+							<tr>
+								<td>이메일 입력 오류</td>
+								<td></td>
+								<td><a href="user/login2.html" target="_blank">user/login2.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+							<tr>
+								<td>비밀번호 입력</td>
+								<td></td>
+								<td><a href="user/login3.html" target="_blank">user/login3.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+							<tr>
+								<td>비밀번호 찾기</td>
+								<td></td>
+								<td><a href="user/login4.html" target="_blank">user/login4.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+                            <tr>
+								<td rowspan="3">회원가입</td>
+								<td>개인/기업 정보입력</td>
+								<td></td>
+								<td><a href="user/join1.html" target="_blank">user/join1.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+                            <tr>
+								<td>약관동의</td>
+								<td></td>
+								<td><a href="user/join2.html" target="_blank">user/join2.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+                            <tr>
+                                <td>회원가입 완료</td>
+								<td></td>
+								<td><a href="user/join3.html" target="_blank">user/join3.html</a></td>
+								<td class="txt-c">2022-02-14</td>
+							</tr>
+							<tr>
+								<td rowspan="8">마이페이지</td>
+								<td>메인</td>
+								<td></td>
+								<td><a href="user/mypage_main.html" target="_blank">user/mypage_main.html</a></td>
+								<td class="txt-c">2022-03-02</td>
+							</tr>
+							<tr>
+								<td>회원정보수정</td>
+								<td></td>
+								<td><a href="user/mypage_sub1.html" target="_blank">user/mypage_sub1.html</a></td>
+								<td class="txt-c">2022-03-02</td>
+							</tr>
+							<tr>
+								<td>주문내역</td>
+								<td></td>
+								<td><a href="user/mypage_sub2.html" target="_blank">user/mypage_sub2.html</a></td>
+								<td class="txt-c">2022-03-02</td>
+							</tr>
+							<tr>
+								<td>문의내역 목록</td>
+								<td></td>
+								<td><a href="user/mypage_sub3.html" target="_blank">user/mypage_sub3.html</a></td>
+								<td class="txt-c">2022-03-02</td>
+							</tr>
+							<tr>
+								<td>문의내역 상세</td>
+								<td></td>
+								<td><a href="user/mypage_sub3_view.html" target="_blank">user/mypage_sub3_view.html</a></td>
+								<td class="txt-c">2022-03-02</td>
+							</tr>
+							<tr>
+								<td>비밀번호 변경</td>
+								<td></td>
+								<td><a href="user/mypage_sub4.html" target="_blank">user/mypage_sub4.html</a></td>
+								<td class="txt-c">2022-03-02</td>
+							</tr>
+							<tr>
+								<td rowspan="2">회원탈퇴</td>
+								<td>default</td>
+								<td><a href="user/mypage_sub5.html" target="_blank">user/mypage_sub5.html</a></td>
+								<td class="txt-c">2022-03-08</td>
+							</tr>
+							<tr>
+								<td>state-error</td>
+								<td><a href="user/mypage_sub5-2.html" target="_blank">user/mypage_sub5-2.html</a></td>
+								<td class="txt-c">2022-03-08</td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td>사용자 팝업목록</td>
+								<td></td>
+								<td><a href="user/user_pop.html" target="_blank">user/user_pop.html</a></td>
+								<td class="txt-c">2022-03-11</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// tab-item-->
+				<!--tab-item-->
+				<div class="tab-item">
+					<table>
+						<caption>고객지원 탭 목록 테이블</caption>
+						<colgroup>
+							<col style="width:200px;">
+							<col>
+							<col>
+							<col style="width:450px;">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1Depth</th>
+								<th>2Depth</th>
+								<th>3Depth</th>
+								<th>경로</th>
+								<th>완료일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="5">고객지원</td>
+								<td>공지사항 목록</td>
+								<td></td>
+								<td><a href="customer/notice.html" target="_blank">customer/notice.html</a></td>
+								<td class="txt-c">2022-02-21</td>
+							</tr>
+							<tr>
+								<td>공지사항 상세</td>
+								<td></td>
+								<td><a href="customer/notice_view.html" target="_blank">customer/notice_view.html</a></td>
+								<td class="txt-c">2022-02-21</td>
+							</tr>
+							<tr>
+								<td>FAQ</td>
+								<td></td>
+								<td><a href="customer/faq.html" target="_blank">customer/faq.html</a></td>
+								<td class="txt-c">2022-02-21</td>
+							</tr>
+							<tr>
+								<td>1:1 문의</td>
+								<td></td>
+								<td><a href="customer/inquiry.html" target="_blank">customer/inquiry.html</a></td>
+								<td class="txt-c">2022-02-21</td>
+							</tr>
+							<tr>
+								<td>고객지원 팝업목록</td>
+								<td></td>
+								<td><a href="customer/customer_pop.html" target="_blank">customer/customer_pop.html</a></td>
+								<td class="txt-c">2022-03-11</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// tab-item-->
+				<!--tab-item-->
+				<div class="tab-item">
+					<table>
+						<caption>견적문의 탭 목록 테이블</caption>
+						<colgroup>
+							<col style="width:200px;">
+							<col>
+							<col>
+							<col style="width:450px;">
+							<col style="width:150px;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>1Depth</th>
+								<th>2Depth</th>
+								<th>3Depth</th>
+								<th>경로</th>
+								<th>완료일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="3">견적문의</td>
+								<td>견적문의</td>
+								<td></td>
+								<td><a href="estimate/estimate.html" target="_blank">estimate/estimate.html</a></td>
+								<td class="txt-c">2022-03-11</td>
+							</tr>
+							<tr>
+								<td>견적문의 오류</td>
+								<td></td>
+								<td><a href="estimate/estimate_error.html" target="_blank">estimate/estimate_error.html</a></td>
+								<td class="txt-c">2022-03-11</td>
+							</tr>
+							<tr>
+								<td>견적문의 팝업목록</td>
+								<td></td>
+								<td><a href="estimate/estimate_pop.html" target="_blank">estimate/estimate_pop.html</a></td>
+								<td class="txt-c">2022-03-11</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// tab-item-->
+			</div>
+			<!--// tab-items-->
+		</div>
+		<!--// tab-wrap-->
+	</div>
+	<!--// pub-list-wrap-->
+
+
+</body>
+</html>

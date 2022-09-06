@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-sub.css"><!--서브페이지-->
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--sub-content-->
+            <div class="sub-content">
+                <!--sub-tit-wrap-->
+                <div class="sub-tit-wrap">
+                    <p class="sub-tit">고객지원</p>
+                </div>
+                <!--// sub-tit-wrap-->
+                <!--sub-tit-tab-->
+                <div class="sub-tit-tab">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1">공지사항</li>
+                        <li class="tab-link" data-tab="tab-2">FAQ</li>
+                        <li class="tab-link current" data-tab="tab-3">1:1 문의</li>
+                    </ul>
+                    <div id="tab-1" class="tab-content">
+                        111
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        222
+                    </div>
+                    <div id="tab-3" class="tab-content current">
+                        <div class="con-mb-base">
+                            <div class="section-tit">의뢰인 정보<span class="tit-info"><span class="required">필수 항목입니다.</span></span></div>
+                            <div class="section-wrap full-fill">
+                                <div class="split">
+                                    <div class="form-group col">
+                                        <label for="inp-sample2" class="form-label"><span class="required">이름</span></label>
+                                        <input id="inp-sample2" class="inp-base w100" type="text" placeholder="홍길동">
+                                    </div>
+                                </div>
+                                <div class="split">
+                                    <div class="form-group col">
+                                        <label for="inp-sample2" class="form-label"><span class="required">이메일</span></label>
+                                        <input id="inp-sample2" class="inp-base w100" type="text" placeholder="abcd@mangosteensoft.co.kr">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con-mb-large">
+                            <div class="section-tit">주요내용<span class="tit-info"><span class="required">필수 항목입니다.</span></span></div>
+                            <div class="section-wrap full-fill">
+                                <div class="split">
+                                    <div class="form-group col">
+                                        <label for="inp-sample2" class="form-label"><span class="required">구분</span></label>
+                                        <!--ui-select-->
+                                        <div class="ui-select state-error">
+                                            <div class="select">
+                                                <span>전체</span>
+                                                <i class="mdi mdi-chevron-down"></i>
+                                            </div>
+                                            <input type="hidden" name="selection">
+                                            <ul class="ui-select-menu">
+                                                <li id="selctID1">회원</li>
+                                                <li id="selctID2">주문/결재</li>
+                                                <li id="selctID3">사이트이용</li>
+                                                <li id="selctID4">기타</li>
+                                            </ul>
+                                        </div>
+                                        <!--// ui-select-->
+                                        <p class="error-mes">분류를 선택해 주세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-wrap">
+                                <div class="split">
+                                    <div class="form-group col">
+                                        <label for="inp-sample2" class="form-label"><span class="required">제목</span></label>
+                                        <input id="inp-sample2" class="inp-base w100 state-error" type="text" placeholder="제목을 입력해 주세요.">
+                                    </div>
+                                    <p class="error-mes">제목을 입력해 주세요.</p>
+                                </div>
+                            </div>
+                            <div class="section-wrap">
+                                <div class="split">
+                                    <div class="form-group col">
+                                        <label for="inp-sample2" class="form-label"><span class="required">문의내용</span></label>
+                                        <textarea name="" id="" rows="10" class="inp-textarea w100 state-error" placeholder="문의 내용을 자세히 작성해 주세요."></textarea>
+                                        <p class="error-mes">문의 내용을 입력해 주세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-wrap">
+                                <div class="split">
+                                    <!--file-wrap-->
+                                    <div class="file-wrap">
+                                        <!--file-top-->
+                                        <div class="file-top">
+                                            <!--file-upload-btn-->
+                                            <div class="file-upload-btn">
+                                                <form>
+                                                    <input type="file" id="sample01">
+                                                    <label for="sample01"><button type="button" class="ui-btn btn-primary2"><span>파일첨부</span></button></label>
+                                                </form>
+                                            </div>
+                                            <!--// file-upload-btn-->
+                                            <p class="bul-star noti-text">파일형식 : .pdf .doc .docx .xls .xlsx .hwp .hwpx .jpg .gif .png .zip  최대50MB</p>
+                                        </div>
+                                        <!--// file-top-->
+                                        <!--file-bottom-->
+                                        <div class="file-bottom">
+                                            <div class="file-list">
+                                                <p class="file-name ellip">파일이름.pdf</p>
+                                                <div class="right"><button><i class="mdi mdi-close"></i><span class="blind">삭제</span></button></div>
+                                            </div>
+                                        </div>
+                                        <!--// file-bottom-->
+                                    </div>
+                                    <!--// file-wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--btn-group-->
+                        <div class="btn-group txt-c">
+                            <button class="ui-btn btn-primary btn-xlarge w-180px mo100"><span>문의하기</span></button>
+                        </div>
+                        <!--// btn-group-->
+                    </div>
+                </div>
+                <!--// sub-tit-tab-->
+            </div>
+            <!--// sub-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
+</body>
+</html>

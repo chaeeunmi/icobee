@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-process.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+    
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--html-guide-->
+        <div class="html-guide">
+            <div class="html-guide-desc">
+                <h1>사용자 팝업 목록</h1>
+                <p>버튼 모양은 화면 디자인에 있는 클래스로 사용해주세요.</p>
+                <div class="guide-desc">
+                    <p class="fn-w600">팝업 버튼 공통</p>
+                    <p>data-target="#popupID", class="popup-open"</p><br>
+                    <p class="fn-w600">버튼 클릭없이 팝업호출</p>
+                    <p>layerPopup('#popupID'); //팝업열기</p>
+                    <p>layerPopupClose('#popupID'); //팝업닫기</p>
+                </div>
+            </div>
+            <button data-target="#emailPop" class="ui-btn btn-primary popup-open"><span>이메일 인증</span></button>
+            <button type="button" data-target="#addressPop" class="ui-btn btn-primary popup-open"><span>주소검색 (우편번호)</span></button>
+            <button data-target="#infoEditPop" class="ui-btn btn-primary popup-open"><span>회원정보 수정</span></button>
+            <button data-target="#signoutPop" class="ui-btn btn-primary popup-open"><span>회원탈퇴</span></button>
+        </div>
+        <!--// html-guide-->
+    </div>
+    <!--// base-wrap-->
+    
+
+    <!-- layer popup : 이메일인증 -->
+	<div class="dim-layer" id="emailPop">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:450px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+                        <div class="tit">
+							<span class="pop-tit">이메일 인증</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--pop-con-tit-wrap-->
+                        <div class="pop-con-tit-wrap">
+                            <div class="shape-info-img">
+                                <p class="shape-info-icon shape-circle state-success"><i class="ri-check-line"></i></p>
+                            </div>
+                            <p class="pop-con-tit-desc"><span class="txt-point fn-medium break-all">admin@mangosteensoft.co.kr</span> 으로 <br class="mo-hide">인증 메일이 전송되었습니다. <br>이메일 인증을 완료해 주세요.</p>
+                        </div>
+                        <!--pop-con-tit-wrap-->
+                        <!--info-box-->
+                        <div class="info-box">
+                            <ul class="bul-round">
+                                <li>이메일이 도착하지 않은 경우, <br>스팸편지함 확인 또는 <a href="#" class="ui-btn btn-text-link btn-underline ver-a-n">인증 메일 다시 보내기</a></li>
+                            </ul>
+                        </div>
+                        <!--// info-box-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w100 popup-open"><span>확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 이메일인증 -->
+
+    <!-- layer popup : 주소검색 -->
+	<div class="dim-layer" id="addressPop">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:500px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<div class="tit">
+							<span class="pop-tit">우편번호 찾기</span>
+						</div>
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner pb-0">
+						<!---------- 내용 ---------->
+                        <!--shc-inp-->
+                        <div class="shc-inp">
+                            <!--has-icon-input-->
+                            <div class="has-icon-input">
+                                <input type="text" name="" id="" class="inp-base inp-large" placeholder="예)서현로">
+                                <button class="ui-btn"><i class="ri-search-line"></i><span class="blind">검색</span></button>
+                            </div>
+                            <!--// has-icon-input-->
+                            <!--address-info-->
+                            <div class="address-info">
+                                <p class="info-tit">찾으시려는 동 혹은 도로의 이름을 입력해 주세요.</p>
+                                <div class="info-desc">
+                                    <p>지번주소 : 동/읍/면/리 이름을 입력하세요. <span class="txt-point">(예 : 서현동)</span></p>
+                                    <p>도로명(새주소) : 도로명을 입력하세요. <span class="txt-point">(예 : 성남대로)</span></p>
+                                </div>
+                            </div>
+                            <!--// address-info-->
+                        </div>
+                        <!--// shc-inp-->
+                        <!--pop-inner-wide-->
+                        <div class="pop-inner-wide pd-0">
+                            <!--address-list-wrap-->
+                            <div class="address-list-wrap">
+                                <ul class="address-list">
+                                    <li>
+                                        <div class="address-group">
+                                            <p class="num">13560<span class="sub-num">(463-867)</span></p>
+                                            <dl class="address-con">
+                                                <dt><span class="field">지번</span></dt>
+                                                <dd><button>경기도 성남시 분당구 정자동 177</button></dd>
+                                                
+                                            </dl>
+                                            <dl class="address-con">
+                                                <dt><span class="field">도로명</span></dt>
+                                                <dd><button>경기도 성남시 분당구 불정로 1</button></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="address-group">
+                                            <p class="num">13560<span class="sub-num">(463-867)</span></p>
+                                            <dl class="address-con">
+                                                <dt><span class="field">지번</span></dt>
+                                                <dd><button>경기도 성남시 분당구 정자동 177</button></dd>
+                                                
+                                            </dl>
+                                            <dl class="address-con">
+                                                <dt><span class="field">도로명</span></dt>
+                                                <dd><button>경기도 성남시 분당구 불정로 1</button></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// address-list-wrap-->
+                        </div>
+                        <!--// pop-inner-wide-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 주소검색 -->
+
+    <!-- layer popup : 회원정보 수정 -->
+	<div class="dim-layer" id="infoEditPop">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:420px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header no-tit">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--pop-con-tit-wrap-->
+                        <div class="pop-con-tit-wrap">
+                            <p class="pop-con-tit">정보 수정</p>
+                            <p class="pop-con-tit-desc">회원정보가 수정되었습니다.</p>
+                        </div>
+                        <!--pop-con-tit-wrap-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w-180px"><span>확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 회원정보 수정 -->
+
+    <!-- layer popup : 회원탈퇴 -->
+	<div class="dim-layer" id="signoutPop">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:500px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header no-tit">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--result-info-->
+                        <div class="result-info type2">
+                            <p class="result-tit">회원 탈퇴</p>
+                            <span class="result-sub-txt">회원탈퇴가 완료되었습니다.<br>그동안 아이코비-스튜디오를 이용해 주셔서 감사합니다.</span>
+                        </div>
+                        <!--// result-info-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w-180px"><span>확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 회원탈퇴 -->
+
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+</body>
+</html>

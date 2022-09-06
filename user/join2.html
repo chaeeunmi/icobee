@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-user.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--base-header-->
+        <header class="base-header">
+            <!--header-wrap-->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1><a href="../main.html"><img src="../resource/img/Logo_color.png" alt="아이코비 스튜디오"></a></h1>
+                </div>
+                <div class="header-right">
+                    <nav class="util-wrap">
+                        <ul class="util-menu">
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-logout-box-r-line"></i><span class="blind">로그아웃</span></button></li>
+                            <li class="mo-hide"><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">알림</span></button></li>
+                            <!--모바일용 알림-->
+                            <!-- <li class="mo-show"><button data-target="#popup1" class="ui-btn only-icon-btn popup-open"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button></li> -->
+                            <li class="mo-show alarm-on">
+                                <span class="alarm-num">1</span><button class="ui-btn only-icon-btn"><i class="ri-notification-2-line"></i><span class="blind">모바일 알림</span></button>
+                            </li>
+                            <!----------------->
+                            <li class="mo-hide sitemap-show"><button class="ui-btn only-icon-btn"><i class="ri-user-line"></i><span class="blind">마이페이지</span></button></li>
+                            <li><button class="ui-btn only-icon-btn"><i class="ri-menu-3-line"></i><span class="blind">메뉴</span></button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--// header-wrap-->
+        </header>
+        <!--// base-header-->
+
+        <!--base-container-->
+        <div class="base-container">
+            <!--sub-content-->
+            <div class="sub-content">
+                <button data-target="#join2" class="ui-btn btn-primary popup-open"><span>약관동의</span></button>
+            </div>
+            <!--// sub-content-->
+        </div>
+        <!--// base-container-->
+
+    </div>
+    <!--// base-wrap-->
+
+    <!-- layer popup : 회원가입 -->
+	<div class="dim-layer" id="join2">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:560px;">
+			<!--pop-container-->
+			<div class="pop-container">
+                <!--pop-header -->
+				<div class="pop-header no-tit"><!--팝업에 타이틀이 없는 경우 no-tit 클래스 추가-->
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--user-wrap-->
+                        <div class="user-wrap">
+                            <!--pop-con-tit-wrap-->
+                            <div class="pop-con-tit-wrap">
+                            <p class="pop-con-tit txt-l">약관에 동의해주세요.</p>
+                            </div>
+                            <!--pop-con-tit-wrap-->
+                            <!--user-con-->
+                            <div class="user-con">
+                                <!--personal-agree-wrap-->
+                                <div class="personal-agree-wrap">
+                                    <!--all-agree-->
+                                    <div class="all-agree">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="apply-check1" class="inp-check type2" name="section1">
+                                            <label for="apply-check1">
+                                                <span class="exp-img fn-w600 fn-size20">전체동의</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--// all-agree-->
+                                    <!--agree-list-wrap-->
+                                    <div class="agree-list-wrap">
+                                        <!--accordion-section-->
+                                        <div class="accordion-section">
+                                            <!--accordion-body-->
+                                            <div class="accordion-body">
+                                                <div class="accordion-label">
+                                                    <div class="form-check agree-required">
+                                                        <input type="checkbox" id="apply-check2" class="inp-check type2" name="section1">
+                                                        <label for="apply-check2">
+                                                            <span class="exp-img">개인정보 회원 이용약관 동의 <span class="txt-point">(필수)</span></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="accord-icon"></span>
+                                                </div>
+                                                <div class="accordion-content">
+                                                    <p class="accent-txt">이용약관</p>
+                                                    아이코비스튜디오 관련 제반 서비스의 이용과 관련하여 필요한 사항을
+                                                    규정합니다.
+                                                    "회사"는 정보통신망 이용촉진 및 정보보호 등에 관한
+                                                    법률(이하 '정보통신망법'), 개인정보 보호법, 통신비밀보호법,
+                                                    전기통신사업법 등 정보통신서비스제공자가 준수하여야
+                                                </div>
+                                            </div>
+                                            <!--// accordion-body-->
+                                            <!--accordion-body-->
+                                            <div class="accordion-body">
+                                                <div class="accordion-label">
+                                                    <div class="form-check agree-required">
+                                                        <input type="checkbox" id="apply-check3" class="inp-check type2" name="section1">
+                                                        <label for="apply-check3">
+                                                            <span class="exp-img">필수적 개인정보 수집 및 이용 동의 <span class="txt-point">(필수)</span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// accordion-body-->
+                                            <!--accordion-body-->
+                                            <div class="accordion-body">
+                                                <div class="accordion-label">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="apply-check4" class="inp-check type2" name="section1">
+                                                        <label for="apply-check4">
+                                                            <span class="exp-img">선택적 개인정보 수집 및 이용동의 <span class="txt-grey">(선택)</span></span>
+                                                        </label>
+                                                    </div>
+                                                    <span class="accord-icon"></span>
+                                                </div>
+                                                <div class="accordion-content">
+                                                    <p class="accent-txt">이용약관</p>
+                                                    아이코비스튜디오 관련 제반 서비스의 이용과 관련하여 필요한 사항을
+                                                    규정합니다.
+                                                    "회사"는 정보통신망 이용촉진 및 정보보호 등에 관한
+                                                    법률(이하 '정보통신망법'), 개인정보 보호법, 통신비밀보호법,
+                                                    전기통신사업법 등 정보통신서비스제공자가 준수하여야
+                                                </div>
+                                            </div>
+                                            <!--// accordion-body-->
+                                            <!--accordion-body-->
+                                            <div class="accordion-body">
+                                                <div class="accordion-label">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="apply-check5" class="inp-check type2" name="section1">
+                                                        <label for="apply-check5">
+                                                            <span class="exp-img">이벤트 등 마케팅 정보 수신 <span class="txt-grey">(선택)</span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// accordion-body-->
+                                            <!--accordion-body-->
+                                            <div class="accordion-body">
+                                                <div class="accordion-label">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="apply-check6" class="inp-check type2" name="section1">
+                                                        <label for="apply-check6">
+                                                            <span class="exp-img">뉴스레터 구독 <span class="txt-grey">(선택)</span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// accordion-body-->
+                                        </div>
+                                        <!--// accordion-section-->
+                                    </div>
+                                    <!--// agree-list-wrap-->
+                                    <p class="agree-info">이용약관 개인정보 수집 및 이용(필수)에 대한 안내 모두 동의해주세요.</p>
+                                </div>
+                                <!--// personal-agree-wrap-->
+                                <div class="btn-group col txt-c">
+                                    <button id="agreeBtn" class="ui-btn btn-primary btn-large w100" disabled><span>동의합니다</span></button>
+                                </div>
+                            </div>
+                            <!--// user-con-->
+                        </div>
+                        <!--// user-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 회원가입 -->
+
+
+    <script>
+        $(document).ready(function(){
+            layerPopup('#join2');//팝업열기
+            //layerPopupClose('#join2');//팝업닫기
+
+            //약관동의 화면 jquery
+            $('.personal-agree-wrap').each(function(){
+
+                $('.personal-agree-wrap .agree-list-wrap .accordion-section input[type="checkbox"]').click(function(){
+					var agreeCheckLength = $('.personal-agree-wrap .agree-list-wrap .accordion-section input[type="checkbox"]:checked').length;
+                    var agreeRequired = $('.personal-agree-wrap .agree-list-wrap .accordion-section .agree-required input[type="checkbox"]:checked').length;
+
+                    //체크박스 전체 선택시 상단 전체동의에 체크
+					 if($('.personal-agree-wrap .agree-list-wrap .accordion-section input[type="checkbox"]').length == agreeCheckLength){
+                        $('.all-agree .form-check input[type="checkbox"]').prop("checked", true);
+					 }else{
+                        $('.all-agree .form-check input[type="checkbox"]').prop("checked", false);
+					 }
+
+                     //필수(.agree-required)요소 모두 선택시 버튼 활성화
+                     if($('.personal-agree-wrap .agree-list-wrap .accordion-section .agree-required input[type="checkbox"]').length == agreeRequired){
+                        $("#agreeBtn").prop("disabled", false);
+					 }else{
+                        $("#agreeBtn").prop("disabled", true);
+					 }
+
+				});
+
+                //전체동의 선택시 모든체크박스 선택
+				$('.personal-agree-wrap .all-agree .form-check input[type="checkbox"]').click(function(){
+					if($(this).is(":checked") == true){
+						$('.personal-agree-wrap .agree-list-wrap .accordion-section input[type="checkbox"]').prop("checked", true);
+                        $("#agreeBtn").prop("disabled", false);
+					}else{
+						$('.personal-agree-wrap .agree-list-wrap .accordion-section input[type="checkbox"]').prop("checked", false);
+                        $("#agreeBtn").prop("disabled", true);
+					}
+					
+				});
+
+            });
+
+
+            
+        });
+    </script>
+
+</body>
+</html>

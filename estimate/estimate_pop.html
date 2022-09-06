@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이코비 스튜디오</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resource/css/jquery.mCustomScrollbar.min.css"><!--scrollbar-->
+    <link rel="stylesheet" href="../resource/css/ui-base.css"><!--공통-->
+    <link rel="stylesheet" href="../resource/css/ui-process.css">
+
+    <!-- JS -->
+    <script src="../resource/js/jquery-latest.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script><!--calendar-->
+    <script src="../resource/js/jquery.mCustomScrollbar.js"></script><!--scrollbar-->
+    <script src="../resource/js/common.js"></script>
+
+
+    
+</head>
+<body>
+    <!--base-wrap-->
+    <div class="base-wrap">
+        <!--html-guide-->
+        <div class="html-guide">
+            <div class="html-guide-desc">
+                <h1>견적문의 팝업 목록</h1>
+                <p>버튼 모양은 화면 디자인에 있는 클래스로 사용해주세요.</p>
+                <div class="guide-desc">
+                    <p class="fn-w600">팝업 버튼 공통</p>
+                    <p>data-target="#popupID", class="popup-open"</p><br>
+                    <p class="fn-w600">버튼 클릭없이 팝업호출</p>
+                    <p>layerPopup('#popupID'); //팝업열기</p>
+                    <p>layerPopupClose('#popupID'); //팝업닫기</p>
+                </div>
+            </div>
+            <button data-target="#popup" class="ui-btn btn-primary popup-open"><span>문의하기</span></button>
+        </div>
+        <!--// html-guide-->
+    </div>
+    <!--// base-wrap-->
+    
+
+    <!-- layer popup : 견적문의 등록 -->
+	<div class="dim-layer" id="popup">
+		<div class="dimBg"></div>
+		<!--pop-layer-->
+		<div class="pop-layer" style="max-width:500px;">
+			<!--pop-container-->
+			<div class="pop-container">
+				<!--pop-header -->
+				<div class="pop-header no-tit">
+					<!--pop-tit-wrap-->
+					<div class="pop-tit-wrap">
+						<button type="button" class="pop-close"><i class="mdi mdi-close"></i><span class="blind">닫기</span></button>
+					</div>
+					<!--// pop-tit-wrap-->
+				</div>
+				<!--// pop-header-->
+				<!--pop-contns-box-->
+				<div class="pop-contns-box">
+					<!--box-inner-->
+					<div class="box-inner">
+						<!---------- 내용 ---------->
+                        <!--result-info-->
+                        <div class="result-info">
+                            <p class="result-tit">견적문의 등록</p>
+                            <span class="result-sub-txt">고객님의 견적문의가 등록 되었습니다.<br>관리자 확인 후 답변 드리겠습니다.<br>감사합니다.</span>
+                        </div>
+                        <!--// result-info-->
+                        <!--con-btn-wrap-->
+                        <div class="con-btn-wrap txt-c">
+                            <button class="ui-btn btn-primary btn-large w-180px"><span>확인</span></button>
+                        </div>
+                        <!--// con-btn-wrap-->
+                        <!---------- //내용 ---------->
+					</div>
+					<!--// box-inner-->
+				</div>
+				<!--// pop-contns-box-->
+			</div>
+			<!--// pop-container-->
+		</div>
+		<!--// pop-layer-->
+	</div>   
+	<!-- // layer popup : 견적문의 등록 -->
+    
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+</body>
+</html>
